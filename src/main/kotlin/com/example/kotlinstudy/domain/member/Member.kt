@@ -24,6 +24,9 @@ class Member(
     var role: Role = role
         protected set
 
+    override fun toString(): String {
+        return "Member(email='$email', password='$password', role=$role)"
+    }
 }
 
 enum class Role {

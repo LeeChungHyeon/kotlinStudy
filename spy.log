@@ -1,0 +1,66 @@
+1736925560223|0|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|SELECT @@character_set_database, @@sql_mode|SELECT @@character_set_database, @@sql_mode
+1736925560559|40|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Comment` drop foreign key if exists `FKk8lsulc0to0gje7apnpwobb1v`|alter table if exists `Comment` drop foreign key if exists `FKk8lsulc0to0gje7apnpwobb1v`
+1736925560595|35|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Post` drop foreign key if exists `FKa9v8iie588k1ltvt2nsepu9gi`|alter table if exists `Post` drop foreign key if exists `FKa9v8iie588k1ltvt2nsepu9gi`
+1736925560616|20|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|drop table if exists `Comment`|drop table if exists `Comment`
+1736925560636|19|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|drop table if exists `Member`|drop table if exists `Member`
+1736925560655|18|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|drop table if exists `Post`|drop table if exists `Post`
+1736925560675|16|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|create table `Comment` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `post_id` bigint, `update_at` datetime(6), `content` varchar(255) not null, primary key (`id`)) engine=InnoDB|create table `Comment` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `post_id` bigint, `update_at` datetime(6), `content` varchar(255) not null, primary key (`id`)) engine=InnoDB
+1736925560692|16|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|create table `Member` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `update_at` datetime(6), `email` varchar(255) not null, `password` varchar(255) not null, `role` enum ('ADMIN','USER') not null, primary key (`id`)) engine=InnoDB|create table `Member` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `update_at` datetime(6), `email` varchar(255) not null, `password` varchar(255) not null, `role` enum ('ADMIN','USER') not null, primary key (`id`)) engine=InnoDB
+1736925560708|15|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|create table `Post` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `member_id` bigint, `update_at` datetime(6), `content` varchar(255), `title` varchar(255) not null, primary key (`id`)) engine=InnoDB|create table `Post` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `member_id` bigint, `update_at` datetime(6), `content` varchar(255), `title` varchar(255) not null, primary key (`id`)) engine=InnoDB
+1736925560742|33|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Comment` add constraint `FKk8lsulc0to0gje7apnpwobb1v` foreign key (`post_id`) references `Post` (`id`)|alter table if exists `Comment` add constraint `FKk8lsulc0to0gje7apnpwobb1v` foreign key (`post_id`) references `Post` (`id`)
+1736925560778|35|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Post` add constraint `FKa9v8iie588k1ltvt2nsepu9gi` foreign key (`member_id`) references `Member` (`id`)|alter table if exists `Post` add constraint `FKa9v8iie588k1ltvt2nsepu9gi` foreign key (`member_id`) references `Member` (`id`)
+2025.01.15 16:19:21 | OperationTime : 0ms|
+HeFormatSql(P6Spy sql,Hibernate format): 
+    insert 
+    into
+        `Member`
+        (
+            `create_at`, `email`, `password`, `role`, `update_at`
+        ) 
+    values
+        ('2025-01-15T16:19:21.293+0900', 'ruthie.bartoletti@yahoo.test', '1234', 'USER', '2025-01-15T16:19:21.293+0900')
+2025.01.15 16:19:21 | OperationTime : 0ms
+1736925579488|0|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|SELECT @@character_set_database, @@sql_mode|SELECT @@character_set_database, @@sql_mode
+1736925579814|35|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Comment` drop foreign key if exists `FKk8lsulc0to0gje7apnpwobb1v`|alter table if exists `Comment` drop foreign key if exists `FKk8lsulc0to0gje7apnpwobb1v`
+1736925579849|34|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Post` drop foreign key if exists `FKa9v8iie588k1ltvt2nsepu9gi`|alter table if exists `Post` drop foreign key if exists `FKa9v8iie588k1ltvt2nsepu9gi`
+1736925579869|19|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|drop table if exists `Comment`|drop table if exists `Comment`
+1736925579889|19|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|drop table if exists `Member`|drop table if exists `Member`
+1736925579908|18|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|drop table if exists `Post`|drop table if exists `Post`
+1736925579927|15|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|create table `Comment` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `post_id` bigint, `update_at` datetime(6), `content` varchar(255) not null, primary key (`id`)) engine=InnoDB|create table `Comment` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `post_id` bigint, `update_at` datetime(6), `content` varchar(255) not null, primary key (`id`)) engine=InnoDB
+1736925579942|14|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|create table `Member` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `update_at` datetime(6), `email` varchar(255) not null, `password` varchar(255) not null, `role` enum ('ADMIN','USER') not null, primary key (`id`)) engine=InnoDB|create table `Member` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `update_at` datetime(6), `email` varchar(255) not null, `password` varchar(255) not null, `role` enum ('ADMIN','USER') not null, primary key (`id`)) engine=InnoDB
+1736925579959|16|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|create table `Post` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `member_id` bigint, `update_at` datetime(6), `content` varchar(255), `title` varchar(255) not null, primary key (`id`)) engine=InnoDB|create table `Post` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `member_id` bigint, `update_at` datetime(6), `content` varchar(255), `title` varchar(255) not null, primary key (`id`)) engine=InnoDB
+1736925579991|31|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Comment` add constraint `FKk8lsulc0to0gje7apnpwobb1v` foreign key (`post_id`) references `Post` (`id`)|alter table if exists `Comment` add constraint `FKk8lsulc0to0gje7apnpwobb1v` foreign key (`post_id`) references `Post` (`id`)
+1736925580025|33|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Post` add constraint `FKa9v8iie588k1ltvt2nsepu9gi` foreign key (`member_id`) references `Member` (`id`)|alter table if exists `Post` add constraint `FKa9v8iie588k1ltvt2nsepu9gi` foreign key (`member_id`) references `Member` (`id`)
+2025.01.15 16:19:40 | OperationTime : 0ms|
+HeFormatSql(P6Spy sql,Hibernate format): 
+    insert 
+    into
+        `Member`
+        (
+            `create_at`, `email`, `password`, `role`, `update_at`
+        ) 
+    values
+        (NULL, 'micheal.turcotte@hotmail.test', '1234', 'USER', NULL)
+2025.01.15 16:19:40 | OperationTime : 0ms
+1736925609482|0|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|SELECT @@character_set_database, @@sql_mode|SELECT @@character_set_database, @@sql_mode
+1736925609820|36|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Comment` drop foreign key if exists `FKk8lsulc0to0gje7apnpwobb1v`|alter table if exists `Comment` drop foreign key if exists `FKk8lsulc0to0gje7apnpwobb1v`
+1736925609856|35|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Post` drop foreign key if exists `FKa9v8iie588k1ltvt2nsepu9gi`|alter table if exists `Post` drop foreign key if exists `FKa9v8iie588k1ltvt2nsepu9gi`
+1736925609876|19|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|drop table if exists `Comment`|drop table if exists `Comment`
+1736925609895|18|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|drop table if exists `Member`|drop table if exists `Member`
+1736925609914|18|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|drop table if exists `Post`|drop table if exists `Post`
+1736925609934|16|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|create table `Comment` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `post_id` bigint, `update_at` datetime(6), `content` varchar(255) not null, primary key (`id`)) engine=InnoDB|create table `Comment` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `post_id` bigint, `update_at` datetime(6), `content` varchar(255) not null, primary key (`id`)) engine=InnoDB
+1736925609948|13|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|create table `Member` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `update_at` datetime(6), `email` varchar(255) not null, `password` varchar(255) not null, `role` enum ('ADMIN','USER') not null, primary key (`id`)) engine=InnoDB|create table `Member` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `update_at` datetime(6), `email` varchar(255) not null, `password` varchar(255) not null, `role` enum ('ADMIN','USER') not null, primary key (`id`)) engine=InnoDB
+1736925609965|16|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|create table `Post` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `member_id` bigint, `update_at` datetime(6), `content` varchar(255), `title` varchar(255) not null, primary key (`id`)) engine=InnoDB|create table `Post` (`create_at` datetime(6) not null, `id` bigint not null auto_increment, `member_id` bigint, `update_at` datetime(6), `content` varchar(255), `title` varchar(255) not null, primary key (`id`)) engine=InnoDB
+1736925609999|33|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Comment` add constraint `FKk8lsulc0to0gje7apnpwobb1v` foreign key (`post_id`) references `Post` (`id`)|alter table if exists `Comment` add constraint `FKk8lsulc0to0gje7apnpwobb1v` foreign key (`post_id`) references `Post` (`id`)
+1736925610033|33|statement|connection 0|url jdbc:p6spy:mariadb://localhost:3306/kotlinStudy|alter table if exists `Post` add constraint `FKa9v8iie588k1ltvt2nsepu9gi` foreign key (`member_id`) references `Member` (`id`)|alter table if exists `Post` add constraint `FKa9v8iie588k1ltvt2nsepu9gi` foreign key (`member_id`) references `Member` (`id`)
+2025.01.15 16:20:10 | OperationTime : 1ms|
+HeFormatSql(P6Spy sql,Hibernate format): 
+    insert 
+    into
+        `Member`
+        (
+            `create_at`, `email`, `password`, `role`, `update_at`
+        ) 
+    values
+        ('2025-01-15T16:20:10.545+0900', 'keith.renner@hotmail.test', '1234', 'USER', '2025-01-15T16:20:10.545+0900')
+2025.01.15 16:20:10 | OperationTime : 0ms

@@ -1,13 +1,15 @@
 package com.example.kotlinstudy.domain.post
 
 import com.example.kotlinstudy.domain.AuditingEntity
+import com.example.kotlinstudy.domain.member.Member
 import jakarta.persistence.*
 
 @Entity
 @Table(name = "Post")
 class Post(
     title: String,
-    content: String
+    content: String,
+    member: Member,
 ) : AuditingEntity() {
 
     @Column(name = "title", nullable = false)
@@ -16,6 +18,10 @@ class Post(
 
     @Column(name = "content", nullable = true)
     var content: String = content
+        protected set
+
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Member::class)
+    var member: Member = member
         protected set
 
 }
