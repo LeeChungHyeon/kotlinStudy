@@ -1,8 +1,6 @@
 package com.example.kotlinstudy.config
 
-import com.example.kotlinstudy.domain.member.Member
-import com.example.kotlinstudy.domain.member.MemberRepository
-import com.example.kotlinstudy.domain.member.Role
+import com.example.kotlinstudy.domain.member.*
 import io.github.serpro69.kfaker.faker
 import mu.KotlinLogging
 import org.springframework.boot.context.event.ApplicationReadyEvent
@@ -20,18 +18,28 @@ class InitData(
 
     @EventListener(ApplicationReadyEvent::class)
     private fun init() {
+        val members = mutableListOf<Member>()
 
-        val member = Member(
-            email = faker.internet.safeEmail(),
-            password = "1234",
-            role = Role.USER
-        )
+        for (i in 1..100) {
+            val member = generateMember()
+            log.info { "insert $member" }
+            members.add(member)
+        }
 
-        log.info { "insert $member" }
 
-        memberRepository.save(member)
+        memberRepository.saveAll(members)
 
 
     }
+
+
+
+
+    private fun generateMember(): Member =
+        MemberSaveReq(
+            email = faker.internet.safeEmail(),
+            password = "1234",
+            role = Role.USER
+        ).toEntity()
 
 }
