@@ -2,6 +2,7 @@ package com.example.kotlinstudy.domain.post
 
 import com.example.kotlinstudy.domain.AuditingEntity
 import com.example.kotlinstudy.domain.member.Member
+import com.example.kotlinstudy.domain.member.toDto
 import jakarta.persistence.*
 
 @Entity
@@ -24,4 +25,16 @@ class Post(
     var member: Member = member
         protected set
 
+    override fun toString(): String {
+        return "Post(id=$id, title='$title', content='$content', member=$member)"
+    }
+}
+
+fun Post.toDto(): PostRes {
+    return PostRes(
+        id = this.id!!,
+        title = this.title,
+        content = this.content,
+        member = this.member.toDto()
+    )
 }

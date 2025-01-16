@@ -590,3 +590,476 @@ Caused by: java.sql.SQLSyntaxErrorException: (conn=790) Data too long for column
 [2025-01-16 15:31:49:49666][SpringApplicationShutdownHook] INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [31mdestroy[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default'
 [2025-01-16 15:31:49:49667][SpringApplicationShutdownHook] INFO com.zaxxer.hikari.HikariDataSource [31mclose[0;39m - HikariPool-1 - Shutdown initiated...
 [2025-01-16 15:31:49:49669][SpringApplicationShutdownHook] INFO com.zaxxer.hikari.HikariDataSource [31mclose[0;39m - HikariPool-1 - Shutdown completed.
+[2025-01-16 15:42:33:177][background-preinit] [32m INFO[0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-01-16 15:42:33:194][main] [32m INFO[0;39m c.e.k.KotlinStudyApplicationKt [36mc.e.k.KotlinStudyApplicationKt[0;39m [32mlogStarting[0;39m 
+ Starting KotlinStudyApplicationKt using Java 17.0.13 with PID 51870 (/Users/this_leechunghyeon/Documents/DevelopmentProject/kotlinStudy/build/classes/kotlin/main started by this_leechunghyeon in /Users/this_leechunghyeon/Documents/DevelopmentProject/kotlinStudy) 
+[2025-01-16 15:42:33:195][main] [32m INFO[0;39m c.e.k.KotlinStudyApplicationKt [36mc.e.k.KotlinStudyApplicationKt[0;39m [32mlogStartupProfileInfo[0;39m 
+ No active profile set, falling back to 1 default profile: "default" 
+[2025-01-16 15:42:33:513][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-01-16 15:42:33:531][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces. 
+[2025-01-16 15:42:34:756][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2025-01-16 15:42:34:760][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2025-01-16 15:42:34:761][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2025-01-16 15:42:34:761][main] [32m INFO[0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2025-01-16 15:42:34:780][main] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2025-01-16 15:42:34:780][main] [32m INFO[0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 567 ms 
+[2025-01-16 15:42:34:876][main] [32m INFO[0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-01-16 15:42:34:894][main] [32m INFO[0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-01-16 15:42:34:905][main] [32m INFO[0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-01-16 15:42:34:991][main] [32m INFO[0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-01-16 15:42:34:1003][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-01-16 15:42:34:1042][main] [32m INFO[0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@4eb48298 
+[2025-01-16 15:42:34:1043][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-01-16 15:42:34:1067][main] [32m INFO[0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-01-16 15:42:34:1372][main] [32m INFO[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-01-16 15:42:34:1637][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-01-16 15:42:35:2061][main] [32m INFO[0;39m o.s.b.a.e.web.EndpointLinksResolver [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-01-16 15:42:35:2086][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2025-01-16 15:42:35:2090][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2025-01-16 15:42:35:2098][main] [32m INFO[0;39m c.e.k.KotlinStudyApplicationKt [36mc.e.k.KotlinStudyApplicationKt[0;39m [32mlogStarted[0;39m 
+ Started KotlinStudyApplicationKt in 2.061 seconds (process running for 2.216) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='clayton.witting@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dannielle.feest.ret@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='scotty.murphy@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='gov.morton.zulauf@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dexter.wunsch@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='essie.schneider@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='adena.bednar@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='kathern.nolan@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dorthy.dickens@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2160][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='fredda.greenfelder@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='minh.halvorson@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='adriane.mccullough@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='naida.ullrich@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='ruben.mckenzie@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='norbert.tremblay@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='prof.willy.parisian@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='harland.o'reilly@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mr.reuben.mante@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='olive.williamson@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='max.gorczany@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='andres.jakubowski.dc@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='gwenda.goyette@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='trinidad.wiegand@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2161][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='julian.schumm@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='prof.winford.hahn@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='jackelyn.sauer@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='nisha.denesik@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='jake.gislason@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='jerrold.klein@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mikel.friesen@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='trisha.windler@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='miss.edmund.kuphal@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='rev.markus.gleichner@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='carman.blanda@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='herschel.hayes@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mr.ninfa.rath@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dee.roob@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2162][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='hester.renner@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='scottie.kertzmann@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='antonette.nader@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='columbus.ullrich@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='sasha.pfannerstill@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='elvis.schulist@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='msgr.grace.schroeder@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='herminia.lowe.md@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mckenzie.bode@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='sima.cronin@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='ms.cammie.bergstrom@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='micki.durgan@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='janessa.wiegand@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='newton.bayer@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='cuc.murazik.jr@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='jessie.kerluke@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='doug.flatley@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2163][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='wes.boyer.dc@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='madie.berge@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='maureen.mann@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='cleta.ullrich@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='walton.schuppe@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='stephine.baumbach@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mrs.joseph.kemmer@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='theron.fay@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='felicita.carroll@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='lucas.huel.jd@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dell.bergnaum@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='carmen.schaefer@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='nicholas.rolfson@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='darin.satterfield@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='kirsten.wiegand@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='ms.jeniffer.medhurst@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2164][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='the.hon.bryon.rogahn@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='virgil.becker@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='marvis.weimann@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='ila.beatty.md@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='ashlee.herzog@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='antonio.bosco@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='vincenzo.bosco.cpa@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='jamie.flatley@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='alfred.walter@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='milton.okuneva@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='sal.cummings@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mrs.shari.reichel@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='neta.pfannerstill@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mrs.ashli.frami@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='rep.michale.kozey@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='lindsay.powlowski@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='lajuana.howell@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='stephan.mcclure@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='luetta.huel@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dusty.smith@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2165][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='errol.johns@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2166][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='annis.rogahn@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2166][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='tory.feeney@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2166][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='krysta.gorczany@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2166][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='mitsuko.lang@hotmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2166][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='gary.kirlin@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2166][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='byron.streich@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2166][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='dorian.hamill@yahoo.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2166][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='catrice.wisoky@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2166][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgenerateMembers[0;39m 
+ insert Member(email='nathan.cole@gmail.test', password='1234', role=USER) 
+[2025-01-16 15:42:35:2246][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@11fa5334 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@639f6a0d 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@2c476b8f 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@2e5affb3 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@6d7a6abf 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@752daa1f 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@62a1bc26 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@1bff70a6 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@256edef4 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@3d8bf514 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@52a42e0f 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@32be0ebd 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@6174ff60 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@3b5950f 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@70921720 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@321b2469 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@74d242b5 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@5b60accd 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@3b2b9b96 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@5078c8f6 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@36d9efa6 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@68812b74 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@f11fad9 
+[2025-01-16 15:42:35:2247][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@19b8bcb5 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@60e5d4fb 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@15e8918 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@1197cd8 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@5d18255a 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@1314700e 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@66f73d3d 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@2c427287 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@306cb0a0 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@c822a3 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@5f09e952 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@60e06e7e 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@355c2b72 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@74c0da40 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@6413fef3 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@763ff91 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@533053b4 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@21d08148 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@5acf07e7 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@42c8f458 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@1334a246 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@364bbba9 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@141962b8 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@11763e57 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@27e688ad 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@4c9bf90b 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@13485e82 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@336c4e3a 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@205c0b1a 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@339cedbb 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@62f11904 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@33bd86fe 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@73f94f48 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@27dc95b9 
+[2025-01-16 15:42:35:2248][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@4d8f917f 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@125a6446 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@2be0ea4a 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@6852c3d2 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@5967b3ce 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@18de84f0 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@34408f1b 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@4a729612 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@2e6fa551 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@427a4d68 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@72722a6b 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@2c6ee031 
+[2025-01-16 15:42:35:2249][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@7ff89dc0 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@6f798e5a 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@cbbc0ac 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@570fc662 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@6ca257de 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@4f8a0f4e 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@1de618b3 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@3473e1bb 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@4a115c4c 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@55feda3f 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@787073b3 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@53a52b3f 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@1396ee3b 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@301af154 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@4b8cf10f 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@310ad792 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@15c900be 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@72bec302 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@5e9650d3 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@3947bad4 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@64d691b2 
+[2025-01-16 15:42:35:2250][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@6074f8f9 
+[2025-01-16 15:42:35:2251][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@c083cec 
+[2025-01-16 15:42:35:2251][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@81da6a3 
+[2025-01-16 15:42:35:2251][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@5816fd13 
+[2025-01-16 15:42:35:2251][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@1fe275d8 
+[2025-01-16 15:42:35:2251][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@52c0c594 
+[2025-01-16 15:42:35:2251][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@370d49d1 
+[2025-01-16 15:42:35:2251][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@581cd446 
+[2025-01-16 15:42:35:2251][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@545c3628 
+[2025-01-16 15:42:35:2251][main] [32m INFO[0;39m c.e.kotlinstudy.config.InitData [36mc.e.k.c.InitData[0;39m [32mgeneratePosts[0;39m 
+ insert com.example.kotlinstudy.domain.post.Post@64a552 
+[2025-01-16 15:42:35:2511][RMI TCP Connection(4)-127.0.0.1] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2025-01-16 15:42:35:2511][RMI TCP Connection(4)-127.0.0.1] [32m INFO[0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2025-01-16 15:42:35:2512][RMI TCP Connection(4)-127.0.0.1] [32m INFO[0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 1 ms 
+[2025-01-16 15:42:38:5389][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2025-01-16 15:42:38:5393][tomcat-shutdown] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2025-01-16 15:42:38:5395][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-01-16 15:42:38:5396][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-01-16 15:42:38:5398][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
