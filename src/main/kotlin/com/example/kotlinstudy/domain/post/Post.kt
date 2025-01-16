@@ -16,7 +16,7 @@ class Post(
     var title: String = title
         protected set
 
-    @Column(name = "content", nullable = true)
+    @Column(name = "content", nullable = true, length = 5000)
     var content: String = content
         protected set
 
