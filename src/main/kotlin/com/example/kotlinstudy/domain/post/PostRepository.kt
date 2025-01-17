@@ -9,25 +9,20 @@ import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.support.PageableExecutionUtils
+import org.springframework.stereotype.Repository
 
 interface PostRepository : JpaRepository<Post, Long>, PostCustomRepository {
 }
-
-
-
 
 interface PostCustomRepository {
 
     fun findPosts(pageable: Pageable): Page<Post>
 }
 
-
-
-
-
 class PostCustomRepositoryImpl(
-    private val queryFactory: SpringDataQueryFactory
 ) : PostCustomRepository {
+
+    private lateinit var queryFactory: SpringDataQueryFactory
 
     override fun findPosts(pageable: Pageable): Page<Post> {
         val results = queryFactory.listQuery<Post> {

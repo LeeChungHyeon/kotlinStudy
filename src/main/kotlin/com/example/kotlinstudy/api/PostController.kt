@@ -4,6 +4,7 @@ import com.example.kotlinstudy.domain.member.MemberSaveReq
 import com.example.kotlinstudy.domain.post.PostSaveReq
 import com.example.kotlinstudy.service.PostService
 import com.example.kotlinstudy.util.value.CmResDto
+import jakarta.validation.Valid
 import org.springframework.data.domain.Pageable
 import org.springframework.data.web.PageableDefault
 import org.springframework.http.HttpStatus
@@ -31,7 +32,7 @@ class PostController(
     }
 
     @PostMapping("/post")
-    fun save(@RequestBody dto: PostSaveReq): CmResDto<*> {
+    fun save(@Valid @RequestBody dto: PostSaveReq): CmResDto<*> {
         return CmResDto(HttpStatus.OK, "save post", postService.savePost(dto))
     }
 }

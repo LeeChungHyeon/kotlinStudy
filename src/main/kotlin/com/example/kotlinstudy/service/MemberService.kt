@@ -1,6 +1,7 @@
 package com.example.kotlinstudy.service
 
 import com.example.kotlinstudy.domain.member.*
+import com.example.kotlinstudy.exception.MemberNotFoundException
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service
@@ -30,7 +31,7 @@ class MemberService(
 
     @Transactional(readOnly = true)
     fun findMemberById(id: Long): MemberRes {
-        return memberRepository.findById(id).orElseThrow().toDto()
+        return memberRepository.findById(id).orElseThrow{throw MemberNotFoundException(id)}.toDto()
     }
 
 
