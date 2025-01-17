@@ -35,11 +35,12 @@ dependencies {
     implementation("io.github.microutils:kotlin-logging:3.0.5")
 
     // https://mvnrepository.com/artifact/com.linecorp.kotlin-jdsl/spring-data-kotlin-jdsl-starter
-    implementation("com.linecorp.kotlin-jdsl:spring-data-kotlin-jdsl-starter:2.2.1.RELEASE")
+    implementation("com.linecorp.kotlin-jdsl:spring-data-kotlin-jdsl-starter-jakarta:2.2.1.RELEASE")
 
     implementation("ch.qos.logback:logback-classic:1.5.16")
     implementation("ch.qos.logback:logback-core:1.5.16")
     implementation("org.codehaus.janino:janino:3.1.10")
+    implementation("org.springframework.boot:spring-boot-starter-aop:2.7.0")
 
     //implementation("org.springframework.boot:spring-boot-starter-data-redis")
     //implementation("org.springframework.boot:spring-boot-starter-security")

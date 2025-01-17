@@ -24,10 +24,9 @@ interface MemberCustomRepository {
 }
 
 class MemberCustomRepositoryImpl(
-
+    private val queryFactory: SpringDataQueryFactory
 ) : MemberCustomRepository {
 
-    private lateinit var queryFactory: SpringDataQueryFactory
 
     val log = KotlinLogging.logger {}
 
