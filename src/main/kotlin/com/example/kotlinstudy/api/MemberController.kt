@@ -1,7 +1,6 @@
 package com.example.kotlinstudy.api
 
-import com.example.kotlinstudy.domain.member.Member
-import com.example.kotlinstudy.domain.member.MemberSaveReq
+import com.example.kotlinstudy.domain.member.LoginDto
 import com.example.kotlinstudy.service.MemberService
 import com.example.kotlinstudy.util.value.CmResDto
 import jakarta.servlet.http.HttpSession
@@ -10,7 +9,6 @@ import org.springframework.data.domain.Pageable
 import org.springframework.data.web.PageableDefault
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
-import java.io.Serializable
 
 @RestController
 @RequestMapping("/api")
@@ -35,7 +33,7 @@ class MemberController(
     }
 
     @PostMapping("/member")
-    fun save(@Valid @RequestBody dto: MemberSaveReq): CmResDto<*> {
+    fun save(@Valid @RequestBody dto: LoginDto): CmResDto<*> {
         return CmResDto(HttpStatus.OK, "save Member", memberService.saveMember(dto))
     }
 

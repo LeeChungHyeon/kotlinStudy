@@ -16,10 +16,8 @@ class AuthController(
     val log = KotlinLogging.logger {}
 
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     fun login(session: HttpSession) {
-
-
         session.setAttribute("principal", "pass")
     }
 }

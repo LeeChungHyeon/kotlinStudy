@@ -2,7 +2,7 @@ package com.example.kotlinstudy.domain.member
 
 import jakarta.validation.constraints.NotNull
 
-data class MemberSaveReq(
+data class LoginDto(
     @field:NotNull(message = "require emil")
     val email: String?,
     @field:NotNull(message = "require password")
@@ -11,7 +11,7 @@ data class MemberSaveReq(
     val role: Role?
 )
 
-fun MemberSaveReq.toEntity(): Member {
+fun LoginDto.toEntity(): Member {
     return Member(email = this.email ?: "", password = this.password ?: "", role = this.role ?: Role.USER)
 }
 

@@ -1,6 +1,5 @@
 package com.example.kotlinstudy.api
 
-import com.example.kotlinstudy.domain.member.MemberSaveReq
 import com.example.kotlinstudy.domain.post.PostSaveReq
 import com.example.kotlinstudy.service.PostService
 import com.example.kotlinstudy.util.value.CmResDto
