@@ -1,5 +1,6 @@
 package com.example.kotlinstudy.config.security
 
+import com.example.kotlinstudy.domain.member.MemberRepository
 import com.fasterxml.jackson.databind.ObjectMapper
 import mu.KotlinLogging
 import org.springframework.context.annotation.Bean
@@ -24,7 +25,8 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource
 @EnableWebSecurity(debug = false)
 class SecurityConfig(
     private val authenticationConfiguration: AuthenticationConfiguration,
-    private val objectMapper: ObjectMapper
+    private val objectMapper: ObjectMapper,
+    private val memberRepository: MemberRepository,
 ) {
 
     private val log = KotlinLogging.logger {}
@@ -47,8 +49,14 @@ class SecurityConfig(
             }
             .cors { cors -> cors.configurationSource(corsConfig()) }
             .addFilter(loginFilter())
+            .addFilter(authenticationFilter())
 
         return http.build()
+    }
+
+    @Bean
+    fun authenticationFilter(): CustomBasicAuthenticationFilter {
+        return CustomBasicAuthenticationFilter(authenticationManager = authenticationManager(), memberRepository = memberRepository)
     }
 
     @Bean

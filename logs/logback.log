@@ -6484,3 +6484,13 @@ Unconditional classes:
  Role 검증 
 [2025-01-20 15:24:53:31836][http-nio-9000-exec-3] [32m INFO[0;39m c.e.k.c.s.CustomUserNameAuthenticationFilter [36mc.e.k.c.s.CustomUserNameAuthenticationFilter[0;39m [32msuccessfulAuthentication[0;39m 
  로그인 성공 후 JWT 토근 response 
+[2025-01-20 15:26:28:126483][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2025-01-20 15:26:28:126486][tomcat-shutdown] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2025-01-20 15:26:28:126489][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-01-20 15:26:28:126490][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-01-20 15:26:28:126492][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
