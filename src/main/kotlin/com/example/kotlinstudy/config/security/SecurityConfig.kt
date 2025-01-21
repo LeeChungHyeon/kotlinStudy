@@ -1,10 +1,16 @@
 package com.example.kotlinstudy.config.security
 
 import com.example.kotlinstudy.domain.member.MemberRepository
+import com.example.kotlinstudy.util.value.CmResDto
+import com.example.kotlinstudy.util.value.func.responseData
 import com.fasterxml.jackson.databind.ObjectMapper
+import jakarta.servlet.http.HttpServletRequest
+import jakarta.servlet.http.HttpServletResponse
 import mu.KotlinLogging
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.http.HttpStatus
+import org.springframework.security.access.AccessDeniedException
 import org.springframework.security.authentication.AuthenticationManager
 import org.springframework.security.config.Customizer
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration
@@ -14,9 +20,15 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer
 import org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer.AuthorizationManagerRequestMatcherRegistry
 import org.springframework.security.config.http.SessionCreationPolicy
+import org.springframework.security.core.Authentication
+import org.springframework.security.core.AuthenticationException
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
+import org.springframework.security.web.AuthenticationEntryPoint
 import org.springframework.security.web.SecurityFilterChain
+import org.springframework.security.web.access.AccessDeniedHandler
+import org.springframework.security.web.authentication.AuthenticationFailureHandler
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler
 import org.springframework.web.cors.CorsConfiguration
 import org.springframework.web.cors.CorsConfigurationSource
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource
@@ -32,11 +44,6 @@ class SecurityConfig(
     private val log = KotlinLogging.logger {}
 
     @Bean
-    fun webSecurityCustomizer(): WebSecurityCustomizer? {
-        return WebSecurityCustomizer { web: WebSecurity -> web.ignoring().requestMatchers("/**") }
-    }
-
-    @Bean
     @Throws(Exception::class)
     fun filterChain(http: HttpSecurity): SecurityFilterChain {
         http
@@ -50,8 +57,73 @@ class SecurityConfig(
             .cors { cors -> cors.configurationSource(corsConfig()) }
             .addFilter(loginFilter())
             .addFilter(authenticationFilter())
+            .exceptionHandling { exceptionHandling ->
+                exceptionHandling.accessDeniedHandler(CustomAccessDeniedHandler())
+                exceptionHandling.authenticationEntryPoint(CustomAuthenticationEntryPoint())
+            }
+            .authorizeHttpRequests { response ->
+                response.requestMatchers("/**").authenticated()
+                // 모든 요청에 대해서 인증없이 허용
+                //response.anyRequest().permitAll()
+            }
+
 
         return http.build()
+    }
+
+    class CustomAuthenticationEntryPoint : AuthenticationEntryPoint {
+
+        private val log = KotlinLogging.logger {}
+
+        override fun commence(
+            request: HttpServletRequest?,
+            response: HttpServletResponse,
+            authException: AuthenticationException?
+        ) {
+            log.info { "!!access denied" }
+            response.sendError(HttpStatus.UNAUTHORIZED.value(), HttpStatus.UNAUTHORIZED.reasonPhrase)
+        }
+    }
+
+    class CustomAccessDeniedHandler : AccessDeniedHandler {
+
+        private val log = KotlinLogging.logger {}
+
+        override fun handle(
+            request: HttpServletRequest?,
+            response: HttpServletResponse,
+            accessDeniedException: AccessDeniedException?
+        ) {
+            log.info { "access denied" }
+            response.sendError(HttpServletResponse.SC_FORBIDDEN)
+        }
+    }
+
+    class CustomFailureHandler : AuthenticationFailureHandler {
+
+        private val log = KotlinLogging.logger {}
+
+        override fun onAuthenticationFailure(
+            request: HttpServletRequest?,
+            response: HttpServletResponse,
+            exception: AuthenticationException?
+        ) {
+            log.warn { "로그인 실패" }
+            response.sendError(HttpServletResponse.SC_FORBIDDEN, "인증 실패")
+        }
+    }
+
+    class CustomSuccessHandler : AuthenticationSuccessHandler {
+
+        private val log = KotlinLogging.logger {}
+
+        override fun onAuthenticationSuccess(
+            request: HttpServletRequest?,
+            response: HttpServletResponse?,
+            authentication: Authentication?
+        ) {
+            log.info { "login Success" }
+        }
     }
 
     @Bean
@@ -74,6 +146,9 @@ class SecurityConfig(
 
         val authenticationFilter = CustomUserNameAuthenticationFilter(objectMapper)
         authenticationFilter.setAuthenticationManager(authenticationManager())
+        authenticationFilter.setFilterProcessesUrl("/login")
+        authenticationFilter.setAuthenticationFailureHandler(CustomFailureHandler())
+        authenticationFilter.setAuthenticationSuccessHandler(CustomSuccessHandler())
 
         return authenticationFilter
     }

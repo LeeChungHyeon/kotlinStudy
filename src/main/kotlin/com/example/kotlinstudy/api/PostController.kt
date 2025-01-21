@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 
 @RestController
+@RequestMapping("/v1")
 class PostController(
     private val postService: PostService
 ) {
