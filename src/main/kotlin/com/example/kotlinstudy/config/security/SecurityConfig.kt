@@ -61,10 +61,13 @@ class SecurityConfig(
                 exceptionHandling.accessDeniedHandler(CustomAccessDeniedHandler())
                 exceptionHandling.authenticationEntryPoint(CustomAuthenticationEntryPoint())
             }
-            .authorizeHttpRequests { response ->
-                response.requestMatchers("/**").authenticated()
-                // 모든 요청에 대해서 인증없이 허용
-                //response.anyRequest().permitAll()
+//            .authorizeHttpRequests { response ->
+//                response.requestMatchers("/**").authenticated()
+//                // 모든 요청에 대해서 인증없이 허용
+//                //response.anyRequest().permitAll()
+//            }
+            .authorizeHttpRequests { auth ->
+                auth.requestMatchers("/v1/posts").hasAnyRole("USER")
             }
 
 

@@ -3,8 +3,6 @@ package com.example.kotlinstudy.config.security
 import mu.KotlinLogging
 import com.auth0.jwt.JWT
 import com.auth0.jwt.algorithms.Algorithm
-import org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties.Jwt
-import java.security.Principal
 import java.util.*
 
 class JwtManager {
@@ -15,7 +13,8 @@ class JwtManager {
     private val claimEmail = "email"
     private val claimPassword = "password"
     private val expireTime = 1000 * 60 * 60
-    val jwtHeader = "Authorization"
+    val authorizationHeader = "Authorization"
+    val jwtHeader = "Bearer "
 
 
     fun generateAccessToken(principal: PrincipalDetails): String {

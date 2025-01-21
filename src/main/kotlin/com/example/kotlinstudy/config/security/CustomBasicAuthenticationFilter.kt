@@ -22,7 +22,7 @@ class CustomBasicAuthenticationFilter(
     override fun doFilterInternal(request: HttpServletRequest, response: HttpServletResponse, chain: FilterChain) {
         log.info { "권한이나 인증이 필요한 요청" }
 
-        val token = request.getHeader(jwtManager.jwtHeader)?.replace("Bearer ", "")
+        val token = request.getHeader(jwtManager.authorizationHeader)?.replace("Bearer ", "")
         if (token == null) {
             log.info { "토근이 없습니다." }
             chain.doFilter(request, response)
