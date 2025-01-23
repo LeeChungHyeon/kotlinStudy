@@ -1,25 +1,32 @@
 package com.example.kotlinstudy.config.security
 
 import com.example.kotlinstudy.domain.member.Member
+import com.fasterxml.jackson.annotation.JsonIgnore
 import mu.KotlinLogging
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 
 class PrincipalDetails (
-    member: Member
+    member: Member = Member.createFakeMember(0L)
 ) : UserDetails {
     private val log = KotlinLogging.logger {}
 
     var member: Member = member
-        private set
 
+    @JsonIgnore
+    val collection: MutableList<GrantedAuthority> = ArrayList()
 
-    override fun getAuthorities(): MutableCollection<out GrantedAuthority> {
+    init {
+        this.collection.add(GrantedAuthority { "ROLE_" + member.role })
+    }
+
+    @JsonIgnore
+    override fun getAuthorities(): MutableList<GrantedAuthority> {
         log.info { "Role 검증" }
-        val collection: MutableCollection<GrantedAuthority> = ArrayList()
-        collection.add(GrantedAuthority { "ROLE_" +  member.role })
+//        val collection: MutableCollection<GrantedAuthority> = ArrayList()
+//        collection.add(GrantedAuthority { "ROLE_" +  member.role })
 
-        return collection
+        return this.collection
     }
 
     override fun getPassword(): String {

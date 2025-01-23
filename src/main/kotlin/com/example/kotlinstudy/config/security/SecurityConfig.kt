@@ -131,7 +131,7 @@ class SecurityConfig(
 
     @Bean
     fun authenticationFilter(): CustomBasicAuthenticationFilter {
-        return CustomBasicAuthenticationFilter(authenticationManager = authenticationManager(), memberRepository = memberRepository)
+        return CustomBasicAuthenticationFilter(authenticationManager = authenticationManager(), memberRepository = memberRepository, objectMapper = objectMapper)
     }
 
     @Bean

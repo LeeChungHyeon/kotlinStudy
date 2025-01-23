@@ -10,28 +10,28 @@ import java.time.LocalDateTime
 @EntityListeners(value = [AuditingEntityListener::class])
 @MappedSuperclass
 abstract class AuditingEntity (
-
-
-
-) : AuditingEntityId() {
+    id: Long
+) : AuditingEntityId(id) {
     @CreatedDate
     @Column(name = "create_at", nullable = false, updatable = false)
-    lateinit var createAt: LocalDateTime
+    var createAt: LocalDateTime = LocalDateTime.now()
         protected set
 
     @LastModifiedDate
     @Column(name = "update_at")
-    lateinit var updateAt: LocalDateTime
+    var updateAt: LocalDateTime = LocalDateTime.now()
         protected set
 
 }
 
 @EntityListeners(value = [AuditingEntityListener::class])
 @MappedSuperclass
-abstract class AuditingEntityId : Serializable {
+abstract class AuditingEntityId(
+    id: Long
+) : Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long? = null
+    var id: Long? = id
         protected set
 
 }
