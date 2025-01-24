@@ -22,13 +22,13 @@ class CustomUserNameAuthenticationFilter(
 
     override fun attemptAuthentication(request: HttpServletRequest?, response: HttpServletResponse?): Authentication {
 
-        log.info { "login 요청" }
+        log.debug { "login 요청" }
 
         lateinit var loginDto: LoginDto
 
         try {
             loginDto = objectMapper.readValue(request?.inputStream, LoginDto::class.java)
-            log.info { "login Dto: $loginDto" }
+            log.debug { "login Dto: $loginDto" }
         } catch (e: Exception) {
             log.error { "loginFilter: 로그인 요청 DTO 생성 중 실패 $e" }
         }
@@ -46,7 +46,7 @@ class CustomUserNameAuthenticationFilter(
         authResult: Authentication
     ) {
 
-        log.info { "로그인 성공 후 JWT 토근 response" }
+        log.debug { "로그인 성공 후 JWT 토근 response" }
 
         val principalDetails = authResult?.principal as PrincipalDetails
         val jwtToken = jwtManager.generateAccessToken(objectMapper.writeValueAsString(principalDetails))

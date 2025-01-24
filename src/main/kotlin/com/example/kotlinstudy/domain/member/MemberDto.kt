@@ -1,6 +1,7 @@
 package com.example.kotlinstudy.domain.member
 
 import jakarta.validation.constraints.NotNull
+import java.time.LocalDateTime
 
 data class LoginDto(
     @field:NotNull(message = "require emil")
@@ -19,5 +20,7 @@ data class MemberRes(
     val id: Long,
     val email: String,
     val password: String,
-    val role: Role
+    val role: Role,
+    val createdAt: LocalDateTime,
+    val updatedAt: LocalDateTime,
 )

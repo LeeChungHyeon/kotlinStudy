@@ -31,4 +31,8 @@
         <appender-ref ref="STDOUT" />
         <appender-ref ref="FILE" />
     </root>
+
+    <logger name="com.example.kotlinstudy" level="debug" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
 </configuration>

@@ -11,7 +11,7 @@ import java.util.*
 import java.util.concurrent.TimeUnit
 
 class JwtManager(
-    accessTokenExpireSecond: Long = 300
+    accessTokenExpireSecond: Long = 60 // 1분
 ) {
 
     private val log = KotlinLogging.logger {}
