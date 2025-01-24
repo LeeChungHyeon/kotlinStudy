@@ -2,7 +2,7 @@ package com.example.kotlinstudy.config.security
 
 import com.example.kotlinstudy.domain.member.MemberRepository
 import com.example.kotlinstudy.util.value.CmResDto
-import com.example.kotlinstudy.util.value.func.responseData
+import com.example.kotlinstudy.util.func.responseData
 import com.fasterxml.jackson.databind.ObjectMapper
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse

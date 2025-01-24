@@ -6,20 +6,21 @@ import com.auth0.jwt.algorithms.Algorithm
 import com.auth0.jwt.exceptions.JWTVerificationException
 import com.auth0.jwt.interfaces.DecodedJWT
 import com.auth0.jwt.interfaces.JWTVerifier
-import com.fasterxml.jackson.databind.ObjectMapper
 import java.util.*
 import java.util.concurrent.TimeUnit
 
 class JwtManager(
-    accessTokenExpireSecond: Long = 60 // 1분
+    accessTokenExpireSecond: Long = 60, // 1분
+    refreshTokenExpireDay: Long = 7
 ) {
 
     private val log = KotlinLogging.logger {}
 
-    private val secritKey: String = "mySecretKey"
-    private val claimEmail = "email"
+    private val accessSecretKey: String = "myAccessSecretKey"
+    private val refreshSecretKey: String = "myRefreshSecretKey"
      val claimPrincipal = "principal"
     private val accessTokenExpireSecond: Long = accessTokenExpireSecond
+    val refreshTokenExpireDay: Long = refreshTokenExpireDay
     val authorizationHeader = "Authorization"
     val jwtHeader = "Bearer "
     private val jwtSubject = "my-token"
@@ -30,36 +31,65 @@ class JwtManager(
 
         log.info { "accessToken Expire: $expireDate" }
 
-        return JWT.create()
-            .withSubject(jwtSubject)
-            .withExpiresAt(expireDate)
-            .withClaim(claimPrincipal, principal)
-            .sign(Algorithm.HMAC512(secritKey))
+        return doGenerateToken(expireDate, principal, accessSecretKey)
     }
 
-    fun getMemberEmail(token: String): String? {
-        return JWT.require(Algorithm.HMAC512(secritKey)).build().verify(token).getClaim(claimEmail).asString()
+    fun generateRefreshToken(principal: String): String {
+        val expireDate = Date(System.nanoTime() + TimeUnit.DAYS.toMillis(refreshTokenExpireDay))
+
+        log.info { "refreshToken Expire: $expireDate" }
+
+        return doGenerateToken(expireDate, principal, refreshSecretKey)
     }
+
+    private fun doGenerateToken(expireDate: Date, principal: String, secretKey: String) = JWT.create()
+        .withSubject(jwtSubject)
+        .withExpiresAt(expireDate)
+        .withClaim(claimPrincipal, principal)
+        .sign(Algorithm.HMAC512(secretKey))
 
     fun getPrincipalStringByAccessToken(accessToken: String): String {
-        val decodedJWT = validatedJwt(accessToken)
-        val principalString = decodedJWT.getClaim(claimPrincipal).asString()
+        val tokenResult = getDecodedJWT(secretKey = accessSecretKey, token = accessToken)
 
-        return principalString
+        return tokenResult.getClaim(claimPrincipal).asString()
     }
 
-    fun validatedJwt(accessToken: String): DecodedJWT {
+    fun getPrincipalStringByRefreshToken(refreshToken: String): String {
+        val tokenResult = getDecodedJWT(secretKey = refreshSecretKey, token = refreshToken)
+
+        return tokenResult.getClaim(claimPrincipal).asString()
+    }
+
+    private fun getDecodedJWT(secretKey: String, token: String): DecodedJWT {
+        val verifier: JWTVerifier = JWT.require(Algorithm.HMAC512(secretKey)).build()
+        val decodedJWT: DecodedJWT = verifier.verify(token)
+
+        return decodedJWT
+    }
+
+    fun validAccessToken(token: String): TokenValidResult {
+        return validatedJwt(token, accessSecretKey)
+    }
+
+    fun validRefreshToken(token: String): TokenValidResult {
+        return validatedJwt(token, refreshSecretKey)
+    }
+
+    private fun validatedJwt(token: String, secretKey: String): TokenValidResult {
         try {
-            val verifier: JWTVerifier = JWT.require(Algorithm.HMAC512(secritKey)).build()
-            val jwt: DecodedJWT = verifier.verify(accessToken)
+            getDecodedJWT(secretKey, token)
 
-            return jwt
+            return TokenValidResult.Success()
         } catch (e: JWTVerificationException) {
-
             log.error("error = ${e.stackTraceToString()}")
 
-            throw RuntimeException("Invalid jwt")
+            return TokenValidResult.Failure(e)
         }
     }
 
+}
+
+sealed class TokenValidResult {
+    class Success(val successValue: Boolean = true) : TokenValidResult()
+    class Failure(val exception: JWTVerificationException) : TokenValidResult()
 }

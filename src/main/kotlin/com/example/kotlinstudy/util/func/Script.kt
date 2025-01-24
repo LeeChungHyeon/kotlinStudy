@@ -1,4 +1,4 @@
-package com.example.kotlinstudy.util.value.func
+package com.example.kotlinstudy.util.func
 
 import jakarta.servlet.http.HttpServletResponse
 import java.io.PrintWriter
