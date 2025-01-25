@@ -1,8 +1,8 @@
 package com.example.kotlinstudy.config.security
 
-import com.auth0.jwt.exceptions.JWTVerificationException
 import com.auth0.jwt.exceptions.TokenExpiredException
 import com.example.kotlinstudy.domain.member.MemberRepository
+import com.example.kotlinstudy.util.CookieProvider
 import com.fasterxml.jackson.databind.ObjectMapper
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
@@ -38,7 +38,28 @@ class CustomBasicAuthenticationFilter(
 
         if (accessTokenResult is TokenValidResult.Failure) {
             if (accessTokenResult.exception is TokenExpiredException) {
-                log.info { "getClass== ${accessTokenResult.javaClass}"}
+                log.info { "getClass== ${accessTokenResult.exception.javaClass}"}
+
+                val refreshToken = CookieProvider.getCookie(request, CookieProvider.CookieName.REFRESH_COOKIE).orElseThrow()
+                val refreshTokenResult = jwtManager.validRefreshToken(refreshToken)
+
+                if (refreshTokenResult is TokenValidResult.Failure) {
+                    throw RuntimeException("invalid refresh token")
+                }
+
+                val principalString = jwtManager.getPrincipalStringByRefreshToken(refreshToken)
+
+                val details = objectMapper.readValue(principalString, PrincipalDetails::class.java)
+
+                val accessToken = jwtManager.generateAccessToken(objectMapper.writeValueAsString(details))
+                response?.addHeader(jwtManager.authorizationHeader, jwtManager.jwtHeader + accessToken)
+
+                val authentication: Authentication = UsernamePasswordAuthenticationToken(details, details.password, details.authorities)
+                SecurityContextHolder.getContext().authentication = authentication
+                chain.doFilter(request, response)
+
+                return
+
             } else {
                 log.error { accessTokenResult.exception.stackTraceToString()}
             }

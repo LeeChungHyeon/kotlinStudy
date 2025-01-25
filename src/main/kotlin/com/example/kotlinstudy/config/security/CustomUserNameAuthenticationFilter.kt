@@ -4,6 +4,7 @@ import com.auth0.jwt.exceptions.JWTVerificationException
 import com.auth0.jwt.exceptions.TokenExpiredException
 import com.example.kotlinstudy.domain.member.LoginDto
 import com.example.kotlinstudy.util.CookieProvider
+import com.example.kotlinstudy.util.CookieProvider.CookieName
 import com.example.kotlinstudy.util.value.CmResDto
 import com.example.kotlinstudy.util.func.responseData
 import com.fasterxml.jackson.databind.ObjectMapper
@@ -60,7 +61,7 @@ class CustomUserNameAuthenticationFilter(
         val refreshToken = jwtManager.generateRefreshToken(objectMapper.writeValueAsString(principalDetails))
 
         val refreshCookie = CookieProvider.createCookie(
-            "refreshCookie",
+            CookieName.REFRESH_COOKIE,
             refreshToken,
             TimeUnit.DAYS.toSeconds(jwtManager.refreshTokenExpireDay)
         )
