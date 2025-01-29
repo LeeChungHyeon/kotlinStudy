@@ -10,11 +10,12 @@ import mu.KotlinLogging
 import org.springframework.boot.context.event.ApplicationReadyEvent
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.event.EventListener
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 
 @Configuration
 class InitData(
     private val memberRepository: MemberRepository,
-    private val postRepository: PostRepository
+    private val postRepository: PostRepository,
 ) {
 
     val faker = faker {  }
@@ -23,11 +24,13 @@ class InitData(
 
     @EventListener(ApplicationReadyEvent::class)
     private fun init() {
-//        val members = generateMembers(100)
+
+//        val members = generateMembers(20)
 //        memberRepository.saveAll(members)
 //
-//        val posts = generatePosts(100)
+//        val posts = generatePosts(20)
 //        postRepository.saveAll(posts)
+
 
 
     }
@@ -38,7 +41,7 @@ class InitData(
         for (i in 1..cnt) {
             val member = generateMember()
             log.info { "insert $member" }
-            members.add(member)
+            memberRepository.save(member)
         }
         return members
     }
@@ -58,7 +61,7 @@ class InitData(
     private fun generateMember(): Member =
         LoginDto(
             email = faker.internet.safeEmail(),
-            password = "1234",
+            rawPassword = "1234",
             role = Role.USER
         ).toEntity()
 

@@ -1,5 +1,7 @@
 package com.example.kotlinstudy.config.security
 
+import com.example.kotlinstudy.domain.HashMapRepositoryImpl
+import com.example.kotlinstudy.domain.InMemoryRepository
 import com.example.kotlinstudy.domain.member.MemberRepository
 import com.example.kotlinstudy.util.value.CmResDto
 import com.example.kotlinstudy.util.func.responseData
@@ -73,7 +75,8 @@ class SecurityConfig(
 //                //response.anyRequest().permitAll()
 //            }
             .authorizeHttpRequests { auth ->
-                auth.requestMatchers("/v1/posts").hasAnyRole("USER", "ADMIN")
+                auth.requestMatchers("/v1/posts").hasRole("USER")
+                auth.requestMatchers("v1/posts").hasRole("ADMIN")
                 //ip 기반 인가처리
                 //auth.requestMatchers(IpAddressMatcher("192.168.0.1")).hasRole("ADMIN")
                 auth.anyRequest().permitAll()
@@ -164,8 +167,18 @@ class SecurityConfig(
     }
 
     @Bean
+    fun inmemoryRepository(): InMemoryRepository {
+        return HashMapRepositoryImpl()
+    }
+
+    @Bean
     fun authenticationFilter(): CustomBasicAuthenticationFilter {
-        return CustomBasicAuthenticationFilter(authenticationManager = authenticationManager(), memberRepository = memberRepository, objectMapper = objectMapper)
+        return CustomBasicAuthenticationFilter(
+            authenticationManager = authenticationManager(),
+            memberRepository = memberRepository,
+            objectMapper = objectMapper,
+            memoryRepository = inmemoryRepository()
+        )
     }
 
     @Bean
@@ -181,7 +194,7 @@ class SecurityConfig(
     @Bean
     fun loginFilter(): CustomUserNameAuthenticationFilter {
 
-        val authenticationFilter = CustomUserNameAuthenticationFilter(objectMapper)
+        val authenticationFilter = CustomUserNameAuthenticationFilter(objectMapper, inmemoryRepository())
         authenticationFilter.setAuthenticationManager(authenticationManager())
         authenticationFilter.setFilterProcessesUrl("/login")
         authenticationFilter.setAuthenticationFailureHandler(CustomFailureHandler())

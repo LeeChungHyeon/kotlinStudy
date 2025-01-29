@@ -1,17 +1,23 @@
 package com.example.kotlinstudy.domain.post
 
-import com.example.kotlinstudy.domain.AuditingEntity
 import com.example.kotlinstudy.domain.member.Member
 import jakarta.persistence.*
+import org.springframework.data.annotation.CreatedDate
+import org.springframework.data.annotation.LastModifiedDate
+import java.time.LocalDateTime
 
 @Entity
 @Table(name = "Post")
 class Post(
-    id: Long = 0,
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long? = null,
     title: String,
     content: String,
     member: Member,
-) : AuditingEntity(id) {
+    createAt: LocalDateTime,
+    updateAt: LocalDateTime
+) {
 
     @Column(name = "title", nullable = false)
     var title: String = title
@@ -23,6 +29,16 @@ class Post(
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Member::class)
     var member: Member = member
+        protected set
+
+    @CreatedDate
+    @Column(name = "create_at", nullable = false, updatable = false)
+    var createAt: LocalDateTime = LocalDateTime.now()
+        protected set
+
+    @LastModifiedDate
+    @Column(name = "update_at")
+    var updateAt: LocalDateTime = LocalDateTime.now()
         protected set
 
     override fun toString(): String {

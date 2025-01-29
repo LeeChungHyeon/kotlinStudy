@@ -1,16 +1,17 @@
 package com.example.kotlinstudy.domain.comment
 
-import com.example.kotlinstudy.domain.AuditingEntity
 import com.example.kotlinstudy.domain.post.Post
 import jakarta.persistence.*
 
 @Entity
 @Table(name = "Comment")
 class Comment(
-    id: Long = 0,
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long? = null,
     content: String,
     post: Post,
-) : AuditingEntity(id) {
+) {
 
     @Column(name = "content", nullable = false)
     var content: String = content

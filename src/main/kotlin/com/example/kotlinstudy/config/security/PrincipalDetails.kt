@@ -22,7 +22,7 @@ class PrincipalDetails (
 
     @JsonIgnore
     override fun getAuthorities(): MutableList<GrantedAuthority> {
-        log.info { "Role 검증" }
+        log.info { "Role 검증 ${member.role}" }
 //        val collection: MutableCollection<GrantedAuthority> = ArrayList()
 //        collection.add(GrantedAuthority { "ROLE_" +  member.role })
 

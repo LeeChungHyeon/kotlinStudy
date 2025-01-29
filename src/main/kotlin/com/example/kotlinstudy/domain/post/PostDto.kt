@@ -3,6 +3,7 @@ package com.example.kotlinstudy.domain.post
 import com.example.kotlinstudy.domain.member.Member
 import com.example.kotlinstudy.domain.member.MemberRes
 import jakarta.validation.constraints.NotNull
+import java.time.LocalDateTime
 
 data class PostSaveReq(
     @field:NotNull(message = "require title")
@@ -14,7 +15,13 @@ data class PostSaveReq(
 )
 
 fun PostSaveReq.toEntity(): Post {
-    return Post(title = this.title ?: "", content = this.content ?: "", member = Member.createFakeMember(this.memberId!!))
+    return Post(
+        title = this.title ?: "",
+        content = this.content ?: "",
+        member = Member.createFakeMember(this.memberId!!),
+        createAt = LocalDateTime.now(),
+        updateAt = LocalDateTime.now()
+    )
 
 }
 

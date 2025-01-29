@@ -25,6 +25,9 @@ extra["snippetsDir"] = file("build/generated-snippets")
 dependencies {
     implementation("com.auth0:java-jwt:3.19.2")
 
+    // https://mvnrepository.com/artifact/net.jodah/expiringmap
+    implementation("net.jodah:expiringmap:0.5.10")
+
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     //implementation("org.springframework.boot:spring-boot-starter-cache")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")

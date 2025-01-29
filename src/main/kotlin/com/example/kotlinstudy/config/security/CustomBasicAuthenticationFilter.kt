@@ -1,6 +1,7 @@
 package com.example.kotlinstudy.config.security
 
 import com.auth0.jwt.exceptions.TokenExpiredException
+import com.example.kotlinstudy.domain.InMemoryRepository
 import com.example.kotlinstudy.domain.member.MemberRepository
 import com.example.kotlinstudy.util.CookieProvider
 import com.fasterxml.jackson.databind.ObjectMapper
@@ -16,6 +17,7 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 
 class CustomBasicAuthenticationFilter(
     private val memberRepository: MemberRepository,
+    private val memoryRepository: InMemoryRepository,
     authenticationManager: AuthenticationManager,
     private val objectMapper: ObjectMapper,
 ) : BasicAuthenticationFilter(authenticationManager) {
@@ -37,32 +39,25 @@ class CustomBasicAuthenticationFilter(
         val accessTokenResult: TokenValidResult = jwtManager.validAccessToken(accessToken)
 
         if (accessTokenResult is TokenValidResult.Failure) {
-            if (accessTokenResult.exception is TokenExpiredException) {
+            handleTokenException(accessTokenResult) {
                 log.info { "getClass== ${accessTokenResult.exception.javaClass}"}
 
                 val refreshToken = CookieProvider.getCookie(request, CookieProvider.CookieName.REFRESH_COOKIE).orElseThrow()
                 val refreshTokenResult = jwtManager.validRefreshToken(refreshToken)
 
-                if (refreshTokenResult is TokenValidResult.Failure) {
-                    throw RuntimeException("invalid refresh token")
-                }
+                if (refreshTokenResult is TokenValidResult.Failure) { throw RuntimeException("invalid refresh token") }
 
-                val principalString = jwtManager.getPrincipalStringByRefreshToken(refreshToken)
+                //val principalString = jwtManager.getPrincipalStringByRefreshToken(refreshToken)
+                //val details = objectMapper.readValue(principalString, PrincipalDetails::class.java)
 
-                val details = objectMapper.readValue(principalString, PrincipalDetails::class.java)
+                //memory respository에서 가져오는 방식으로 수정
+                val details = memoryRepository.findByKey(refreshToken) as PrincipalDetails
 
-                val accessToken = jwtManager.generateAccessToken(objectMapper.writeValueAsString(details))
-                response?.addHeader(jwtManager.authorizationHeader, jwtManager.jwtHeader + accessToken)
-
-                val authentication: Authentication = UsernamePasswordAuthenticationToken(details, details.password, details.authorities)
-                SecurityContextHolder.getContext().authentication = authentication
-                chain.doFilter(request, response)
-
-                return
-
-            } else {
-                log.error { accessTokenResult.exception.stackTraceToString()}
+                reissueAccessToken(details, response)
+                setAuthentication(details, chain, request, response)
             }
+
+            return
         }
 
         val principalJsonData = jwtManager.getPrincipalStringByAccessToken(accessToken)
@@ -73,9 +68,44 @@ class CustomBasicAuthenticationFilter(
         //val member = memberRepository.findMemberByEmail(details.member.email)
         //val principalDetails = PrincipalDetails(member)
 
-        val authentication: Authentication = UsernamePasswordAuthenticationToken(principalDetails, principalDetails.password, principalDetails.authorities)
+        setAuthentication(principalDetails, chain, request, response)
+    }
+
+    private fun setAuthentication(
+        details: PrincipalDetails,
+        chain: FilterChain,
+        request: HttpServletRequest,
+        response: HttpServletResponse
+    ) {
+        val authentication: Authentication =
+            UsernamePasswordAuthenticationToken(details, details.password, details.authorities)
         SecurityContextHolder.getContext().authentication = authentication
         chain.doFilter(request, response)
+    }
+
+    private fun reissueAccessToken(
+        details: PrincipalDetails?,
+        response: HttpServletResponse
+    ) {
+
+        log.info { "accessToken 재발급" }
+
+        val accessToken = jwtManager.generateAccessToken(objectMapper.writeValueAsString(details))
+        response?.addHeader(jwtManager.authorizationHeader, jwtManager.jwtHeader + accessToken)
+
+    }
+
+    private fun handleTokenException(tokenValidResult: TokenValidResult.Failure, func: () -> Unit) {
+
+        when(tokenValidResult.exception) {
+            is TokenExpiredException -> func()
+            else -> {
+                log.error(tokenValidResult.exception.stackTraceToString())
+                throw tokenValidResult.exception
+            }
+
+        }
+
     }
 
 //    private fun reissueAccessToken(
