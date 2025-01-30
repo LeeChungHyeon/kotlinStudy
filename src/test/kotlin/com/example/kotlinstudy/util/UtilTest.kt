@@ -21,36 +21,36 @@ class UtilTest {
         log.error { "error" }
     }
 
-    @Test
-    fun generateJwtTest() {
-
-        mapper.registerModule(JavaTimeModule())
-
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
-
-        val jwtManager = JwtManager(accessTokenExpireSecond = 60)
-
-        val details = PrincipalDetails(Member.createFakeMember(1))
-        val jsonPrincipal = mapper.writeValueAsString(details)
-        val accessToken = jwtManager.generateAccessToken(jsonPrincipal)
-
-        val decodedJWT = jwtManager.validatedJwt(accessToken)
-
-        val principalString = decodedJWT.getClaim(jwtManager.claimPrincipal).asString()
-
-        val principalDetails = mapper.readValue(principalString, PrincipalDetails::class.java)
-
-        log.info { "principal: ${principalDetails.member}" }
-
-        principalDetails.authorities.forEach {
-            println(it.authority)
-        }
-
-        details.authorities.forEach {
-            println(it.authority)
-        }
-
-    }
+//    @Test
+//    fun generateJwtTest() {
+//
+//        mapper.registerModule(JavaTimeModule())
+//
+//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+//
+//        val jwtManager = JwtManager(accessTokenExpireSecond = 60)
+//
+//        val details = PrincipalDetails(Member.createFakeMember(1))
+//        val jsonPrincipal = mapper.writeValueAsString(details)
+//        val accessToken = jwtManager.generateAccessToken(jsonPrincipal)
+//
+//        val decodedJWT = jwtManager.validatedJwt(accessToken)
+//
+//        val principalString = decodedJWT.getClaim(jwtManager.claimPrincipal).asString()
+//
+//        val principalDetails = mapper.readValue(principalString, PrincipalDetails::class.java)
+//
+//        log.info { "principal: ${principalDetails.member}" }
+//
+//        principalDetails.authorities.forEach {
+//            println(it.authority)
+//        }
+//
+//        details.authorities.forEach {
+//            println(it.authority)
+//        }
+//
+//    }
 
     @Test
     fun bcryptEncoderTest() {

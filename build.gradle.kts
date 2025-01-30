@@ -27,6 +27,7 @@ dependencies {
 
     // https://mvnrepository.com/artifact/net.jodah/expiringmap
     implementation("net.jodah:expiringmap:0.5.10")
+    implementation("it.ozimov:embedded-redis:0.7.3") { exclude(group = "org.slf4j", module = "slf4j-simple") }
 
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     //implementation("org.springframework.boot:spring-boot-starter-cache")
@@ -47,7 +48,7 @@ dependencies {
     implementation("org.codehaus.janino:janino:3.1.10")
     implementation("org.springframework.boot:spring-boot-starter-aop:2.7.0")
 
-    //implementation("org.springframework.boot:spring-boot-starter-data-redis")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-web")

@@ -2,6 +2,7 @@ package com.example.kotlinstudy.config.security
 
 import com.example.kotlinstudy.domain.HashMapRepositoryImpl
 import com.example.kotlinstudy.domain.InMemoryRepository
+import com.example.kotlinstudy.domain.RedisRepositoryImpl
 import com.example.kotlinstudy.domain.member.MemberRepository
 import com.example.kotlinstudy.util.value.CmResDto
 import com.example.kotlinstudy.util.func.responseData
@@ -11,6 +12,7 @@ import jakarta.servlet.http.HttpServletResponse
 import mu.KotlinLogging
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.data.redis.core.RedisTemplate
 import org.springframework.http.HttpStatus
 import org.springframework.security.access.AccessDeniedException
 import org.springframework.security.authentication.AuthenticationManager
@@ -47,9 +49,17 @@ class SecurityConfig(
     private val authenticationConfiguration: AuthenticationConfiguration,
     private val objectMapper: ObjectMapper,
     private val memberRepository: MemberRepository,
+    private val redisTemplate: RedisTemplate<String, Any>
 ) {
 
     private val log = KotlinLogging.logger {}
+
+    //@Bean
+    fun webSecurityCustomizer(): WebSecurityCustomizer? {
+        return WebSecurityCustomizer {
+            web: WebSecurity -> web.ignoring().requestMatchers("/**")
+        }
+    }
 
     @Bean
     @Throws(Exception::class)
@@ -168,8 +178,9 @@ class SecurityConfig(
 
     @Bean
     fun inmemoryRepository(): InMemoryRepository {
-        return HashMapRepositoryImpl()
+        return RedisRepositoryImpl(this.redisTemplate)
     }
+
 
     @Bean
     fun authenticationFilter(): CustomBasicAuthenticationFilter {

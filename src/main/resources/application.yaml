@@ -7,9 +7,14 @@ server:
       enabled: true
 
 spring:
-  output:
-    ansi:
-      enabled: ALWAYS
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+    output:
+      ansi:
+        enabled: always
   datasource:
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     url: jdbc:p6spy:mariadb://localhost:3306/kotlinStudy
@@ -32,5 +37,3 @@ decorator:
   datasource:
     p6spy:
       enable-logging: true
-
-
