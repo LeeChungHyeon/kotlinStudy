@@ -35,6 +35,7 @@ import org.springframework.security.web.AuthenticationEntryPoint
 import org.springframework.security.web.SecurityFilterChain
 import org.springframework.security.web.access.AccessDeniedHandler
 import org.springframework.security.web.authentication.AuthenticationFailureHandler
+import org.springframework.security.web.authentication.AuthenticationFilter
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler
 import org.springframework.security.web.util.matcher.IpAddressMatcher
@@ -75,6 +76,7 @@ class SecurityConfig(
             .cors { cors -> cors.configurationSource(corsConfig()) }
             .addFilter(loginFilter())
             .addFilter(authenticationFilter())
+            .addFilterAt(authenticationFilter(), AuthenticationFilter::class.java)
             .exceptionHandling { exceptionHandling ->
                 exceptionHandling.accessDeniedHandler(CustomAccessDeniedHandler())
                 exceptionHandling.authenticationEntryPoint(CustomAuthenticationEntryPoint())
@@ -85,8 +87,7 @@ class SecurityConfig(
 //                //response.anyRequest().permitAll()
 //            }
             .authorizeHttpRequests { auth ->
-                auth.requestMatchers("/v1/posts").hasRole("USER")
-                auth.requestMatchers("v1/posts").hasRole("ADMIN")
+                auth.requestMatchers("/v1/posts").hasAnyRole("USER", "ADMIN")
                 //ip 기반 인가처리
                 //auth.requestMatchers(IpAddressMatcher("192.168.0.1")).hasRole("ADMIN")
                 auth.anyRequest().permitAll()

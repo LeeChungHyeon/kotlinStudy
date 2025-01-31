@@ -67,7 +67,7 @@ class CustomUserNameAuthenticationFilter(
 
         response?.addHeader(jwtManager.authorizationHeader, jwtManager.jwtHeader + accessToken)
         response.addHeader(HttpHeaders.SET_COOKIE, refreshCookie.toString())
-        memoryRepository.save(refreshToken, principalDetails)
+        memoryRepository.save(refreshToken, objectMapper.writeValueAsString(principalDetails))
 
         val jsonResult = objectMapper.writeValueAsString(CmResDto(HttpStatus.OK, "login success", principalDetails.member))
         responseData(response, jsonResult)

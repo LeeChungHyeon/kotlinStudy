@@ -51,10 +51,12 @@ class CustomBasicAuthenticationFilter(
                 //val details = objectMapper.readValue(principalString, PrincipalDetails::class.java)
 
                 //memory respository에서 가져오는 방식으로 수정
-                val details = memoryRepository.findByKey(refreshToken) as PrincipalDetails
+                val jsonDetail = memoryRepository.findByKey(refreshToken) as String
 
-                reissueAccessToken(details, response)
-                setAuthentication(details, chain, request, response)
+                val principalDetails = objectMapper.readValue(jsonDetail, PrincipalDetails::class.java)
+
+                reissueAccessToken(principalDetails, response)
+                setAuthentication(principalDetails, chain, request, response)
             }
 
             return

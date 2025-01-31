@@ -70,7 +70,7 @@ open class RedisRepositoryImpl(
 
         Thread.sleep(50)
 
-        redisTemplate.opsForValue().set(key, value)
+        redisTemplate.opsForValue().set(key, value, Duration.ofDays(JwtManager.getRefreshTokenDay()))
 
     }
 }
