@@ -1,5 +1,8 @@
 package com.example.kotlinstudy.api
 
+import com.example.kotlinstudy.util.dto.SearchType
+import com.example.kotlinstudy.util.dto.searchCondition
+import mu.KotlinLogging
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -8,9 +11,30 @@ class TestController(
 
 ) {
 
+    private val log = KotlinLogging.logger {}
+
     @GetMapping("/health")
     fun healthTest(): String {
         return "hello kotlinStudy"
+    }
+
+    @GetMapping("/enum")
+    fun enumTest(searchCondition: searchCondition): String {
+        log.info {
+            """
+            $searchCondition
+            
+            ${searchCondition.searchType}
+            ${searchCondition.keyword}
+            """.trimIndent()
+        }
+
+        return "test"
+    }
+
+    @GetMapping("/enum2")
+    fun enumTest2(searchType: SearchType): String {
+        return searchType.name
     }
 
 

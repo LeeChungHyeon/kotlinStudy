@@ -1,0 +1,45 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  config:
+    activate:
+      on-profile: test
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+    output:
+      ansi:
+        enabled: always
+  datasource:
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mariadb://localhost:3306/kotlinStudy
+    username: root
+    password: dlcndgus
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    open-in-view: false
+    properties:
+      hibernate:
+        default_batch_fetch_size: 1000
+        globally_quoted_identifiers: true
+    show-sql: true
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true
