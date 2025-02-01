@@ -1,48 +1,48 @@
-[2025-01-31 00:09:00:219][background-preinit] [32m INFO[0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+[2025-02-01 18:55:32:283][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
  HV000001: Hibernate Validator 8.0.2.Final 
-[2025-01-31 00:09:01:702][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+[2025-02-01 18:55:32:791][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
  Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:09:01:703][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+[2025-02-01 18:55:32:792][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
  Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-[2025-01-31 00:09:01:763][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces. 
-[2025-01-31 00:09:01:768][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+[2025-02-01 18:55:33:855][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces. 
+[2025-02-01 18:55:33:861][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
  Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:09:01:769][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+[2025-02-01 18:55:33:862][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
  Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-[2025-01-31 00:09:01:775][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+[2025-02-01 18:55:33:868][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:09:01:776][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+[2025-02-01 18:55:33:868][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:09:01:776][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+[2025-02-01 18:55:33:868][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
  Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
-[2025-01-31 00:09:01:1103][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+[2025-02-01 18:55:33:1215][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
  Tomcat initialized with port 9000 (http) 
-[2025-01-31 00:09:01:1107][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+[2025-02-01 18:55:33:1220][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
  Initializing ProtocolHandler ["http-nio-9000"] 
-[2025-01-31 00:09:01:1108][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+[2025-02-01 18:55:33:1220][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
  Starting service [Tomcat] 
-[2025-01-31 00:09:01:1108][main] [32m INFO[0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+[2025-02-01 18:55:33:1220][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
  Starting Servlet engine: [Apache Tomcat/10.1.34] 
-[2025-01-31 00:09:01:1127][main] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+[2025-02-01 18:55:33:1240][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
  Initializing Spring embedded WebApplicationContext 
-[2025-01-31 00:09:01:1127][main] [32m INFO[0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
- Root WebApplicationContext: initialization completed in 875 ms 
-[2025-01-31 00:09:01:1272][main] [32m INFO[0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+[2025-02-01 18:55:33:1240][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 920 ms 
+[2025-02-01 18:55:33:1387][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
  HHH000204: Processing PersistenceUnitInfo [name: default] 
-[2025-01-31 00:09:01:1295][main] [32m INFO[0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+[2025-02-01 18:55:33:1410][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
  HHH000412: Hibernate ORM core version 6.6.4.Final 
-[2025-01-31 00:09:01:1307][main] [32m INFO[0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+[2025-02-01 18:55:33:1425][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
  HHH000026: Second-level cache disabled 
-[2025-01-31 00:09:01:1420][main] [32m INFO[0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+[2025-02-01 18:55:33:1544][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
  No LoadTimeWeaver setup: ignoring JPA class transformer 
-[2025-01-31 00:09:01:1431][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+[2025-02-01 18:55:33:1555][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
  HikariPool-1 - Starting... 
-[2025-01-31 00:09:01:1466][main] [32m INFO[0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
- HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@4ebb7bab 
-[2025-01-31 00:09:01:1466][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+[2025-02-01 18:55:33:1592][main] [32m INFO[0;39m [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6ba0dcba 
+[2025-02-01 18:55:33:1593][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
  HikariPool-1 - Start completed. 
-[2025-01-31 00:09:01:1489][main] [32m INFO[0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+[2025-02-01 18:55:33:1691][main] [32m INFO[0;39m [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
  HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
@@ -51,596 +51,860 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown 
-[2025-01-31 00:09:02:1807][main] [32m INFO[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+[2025-02-01 18:55:34:2029][main] [32m INFO[0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-[2025-01-31 00:09:02:1829][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+[2025-02-01 18:55:34:2053][main] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
  Initialized JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:09:02:2118][main] [32m INFO[0;39m o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+[2025-02-01 18:55:34:2422][main] [32m INFO[0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
  Global AuthenticationManager configured with UserDetailsService bean with name authService 
-[2025-01-31 00:09:02:2219][main] [33m WARN[0;39m o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m [32mrefresh[0;39m 
- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed 
-[2025-01-31 00:09:02:2328][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
- Closing JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:09:02:2331][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown initiated... 
-[2025-01-31 00:09:02:2334][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown completed. 
-[2025-01-31 00:09:02:2335][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Stopping service [Tomcat] 
-[2025-01-31 00:09:02:2344][main] [32m INFO[0;39m o.s.b.a.l.ConditionEvaluationReportLogger [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m [32mlogMessage[0;39m 
- 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
-[2025-01-31 00:09:02:2351][main] [31mERROR[0;39m o.s.boot.SpringApplication [36mo.s.b.SpringApplication[0;39m [32mreportFailure[0;39m 
- Application run failed 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:423)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.example.kotlinstudy.KotlinStudyApplicationKt.main(KotlinStudyApplication.kt:14)
-Caused by: java.lang.RuntimeException: class path resource [binary/redis/redis-server-arm64] cannot be resolved to URL because it does not exist
-	at com.example.kotlinstudy.config.redis.EmbeddedRedisConfig.getRedisFileForArcMac(EmbeddedRedisConfig.kt:70)
-	at com.example.kotlinstudy.config.redis.EmbeddedRedisConfig.init(EmbeddedRedisConfig.kt:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
-	... 20 common frames omitted
-[2025-01-31 00:12:17:188][background-preinit] [32m INFO[0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
- HV000001: Hibernate Validator 8.0.2.Final 
-[2025-01-31 00:12:17:629][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:12:17:630][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-[2025-01-31 00:12:17:688][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces. 
-[2025-01-31 00:12:17:693][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:12:17:693][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-[2025-01-31 00:12:17:699][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:12:17:699][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:12:17:699][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces. 
-[2025-01-31 00:12:18:1017][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
- Tomcat initialized with port 9000 (http) 
-[2025-01-31 00:12:18:1021][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
- Initializing ProtocolHandler ["http-nio-9000"] 
-[2025-01-31 00:12:18:1022][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Starting service [Tomcat] 
-[2025-01-31 00:12:18:1022][main] [32m INFO[0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
- Starting Servlet engine: [Apache Tomcat/10.1.34] 
-[2025-01-31 00:12:18:1040][main] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
- Initializing Spring embedded WebApplicationContext 
-[2025-01-31 00:12:18:1041][main] [32m INFO[0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
- Root WebApplicationContext: initialization completed in 818 ms 
-[2025-01-31 00:12:18:1184][main] [32m INFO[0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
- HHH000204: Processing PersistenceUnitInfo [name: default] 
-[2025-01-31 00:12:18:1204][main] [32m INFO[0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
- HHH000412: Hibernate ORM core version 6.6.4.Final 
-[2025-01-31 00:12:18:1216][main] [32m INFO[0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
- HHH000026: Second-level cache disabled 
-[2025-01-31 00:12:18:1323][main] [32m INFO[0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
- No LoadTimeWeaver setup: ignoring JPA class transformer 
-[2025-01-31 00:12:18:1334][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Starting... 
-[2025-01-31 00:12:18:1367][main] [32m INFO[0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
- HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@71817f66 
-[2025-01-31 00:12:18:1367][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Start completed. 
-[2025-01-31 00:12:18:1389][main] [32m INFO[0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
- HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 11.6.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown 
-[2025-01-31 00:12:18:1696][main] [32m INFO[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-[2025-01-31 00:12:18:1717][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
- Initialized JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:12:19:1990][main] [32m INFO[0;39m o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
- Global AuthenticationManager configured with UserDetailsService bean with name authService 
-[2025-01-31 00:12:19:2088][main] [33m WARN[0;39m o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m [32mrefresh[0;39m 
- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed 
-[2025-01-31 00:12:19:2196][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
- Closing JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:12:19:2199][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown initiated... 
-[2025-01-31 00:12:19:2201][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown completed. 
-[2025-01-31 00:12:19:2202][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Stopping service [Tomcat] 
-[2025-01-31 00:12:19:2214][main] [32m INFO[0;39m o.s.b.a.l.ConditionEvaluationReportLogger [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m [32mlogMessage[0;39m 
- 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
-[2025-01-31 00:12:19:2221][main] [31mERROR[0;39m o.s.boot.SpringApplication [36mo.s.b.SpringApplication[0;39m [32mreportFailure[0;39m 
- Application run failed 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:423)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.example.kotlinstudy.KotlinStudyApplicationKt.main(KotlinStudyApplication.kt:14)
-Caused by: java.lang.RuntimeException: class path resource [resources/redis/redis-server-7.2.3-mac-arm64] cannot be resolved to URL because it does not exist
-	at com.example.kotlinstudy.config.redis.EmbeddedRedisConfig.getRedisFileForArcMac(EmbeddedRedisConfig.kt:70)
-	at com.example.kotlinstudy.config.redis.EmbeddedRedisConfig.init(EmbeddedRedisConfig.kt:36)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
-	... 20 common frames omitted
-[2025-01-31 00:14:01:185][background-preinit] [32m INFO[0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
- HV000001: Hibernate Validator 8.0.2.Final 
-[2025-01-31 00:14:02:588][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:14:02:589][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-[2025-01-31 00:14:02:641][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces. 
-[2025-01-31 00:14:02:645][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:14:02:645][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-[2025-01-31 00:14:02:650][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:14:02:650][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:14:02:651][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces. 
-[2025-01-31 00:14:02:951][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
- Tomcat initialized with port 9000 (http) 
-[2025-01-31 00:14:02:955][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
- Initializing ProtocolHandler ["http-nio-9000"] 
-[2025-01-31 00:14:02:956][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Starting service [Tomcat] 
-[2025-01-31 00:14:02:956][main] [32m INFO[0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
- Starting Servlet engine: [Apache Tomcat/10.1.34] 
-[2025-01-31 00:14:02:974][main] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
- Initializing Spring embedded WebApplicationContext 
-[2025-01-31 00:14:02:974][main] [32m INFO[0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
- Root WebApplicationContext: initialization completed in 758 ms 
-[2025-01-31 00:14:02:1117][main] [32m INFO[0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
- HHH000204: Processing PersistenceUnitInfo [name: default] 
-[2025-01-31 00:14:02:1136][main] [32m INFO[0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
- HHH000412: Hibernate ORM core version 6.6.4.Final 
-[2025-01-31 00:14:02:1148][main] [32m INFO[0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
- HHH000026: Second-level cache disabled 
-[2025-01-31 00:14:03:1248][main] [32m INFO[0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
- No LoadTimeWeaver setup: ignoring JPA class transformer 
-[2025-01-31 00:14:03:1260][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Starting... 
-[2025-01-31 00:14:03:1294][main] [32m INFO[0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
- HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@3662c887 
-[2025-01-31 00:14:03:1295][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Start completed. 
-[2025-01-31 00:14:03:1316][main] [32m INFO[0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
- HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 11.6.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown 
-[2025-01-31 00:14:03:1621][main] [32m INFO[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-[2025-01-31 00:14:03:1643][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
- Initialized JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:14:03:1933][main] [32m INFO[0;39m o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
- Global AuthenticationManager configured with UserDetailsService bean with name authService 
-[2025-01-31 00:14:04:2431][main] [33m WARN[0;39m o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m [32mrefresh[0;39m 
- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed 
-[2025-01-31 00:14:04:2542][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
- Closing JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:14:04:2546][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown initiated... 
-[2025-01-31 00:14:04:2548][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown completed. 
-[2025-01-31 00:14:04:2549][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Stopping service [Tomcat] 
-[2025-01-31 00:14:04:2561][main] [32m INFO[0;39m o.s.b.a.l.ConditionEvaluationReportLogger [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m [32mlogMessage[0;39m 
- 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
-[2025-01-31 00:14:04:2569][main] [31mERROR[0;39m o.s.boot.SpringApplication [36mo.s.b.SpringApplication[0;39m [32mreportFailure[0;39m 
- Application run failed 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:423)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.example.kotlinstudy.KotlinStudyApplicationKt.main(KotlinStudyApplication.kt:14)
-Caused by: java.lang.RuntimeException: Can't start redis server. Check logs for details. Redis process log: 
-5018:C 31 Jan 2025 00:14:04.215 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-5018:C 31 Jan 2025 00:14:04.215 * Redis version=7.2.3, bits=64, commit=00000000, modified=0, pid=5018, just started
-5018:C 31 Jan 2025 00:14:04.215 * Configuration loaded
-5018:M 31 Jan 2025 00:14:04.215 * monotonic clock: POSIX clock_gettime
-5018:M 31 Jan 2025 00:14:04.215 * Running mode=standalone, port=6379.
-5018:M 31 Jan 2025 00:14:04.215 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
-5018:M 31 Jan 2025 00:14:04.216 # Warning: Could not create server TCP listening socket *:6379: bind: Address already in use
-5018:M 31 Jan 2025 00:14:04.216 # Failed listening on port 6379 (tcp), aborting.
-	at com.example.kotlinstudy.config.redis.EmbeddedRedisConfig.init(EmbeddedRedisConfig.kt:46)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
-	... 20 common frames omitted
-[2025-01-31 00:16:21:204][background-preinit] [32m INFO[0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
- HV000001: Hibernate Validator 8.0.2.Final 
-[2025-01-31 00:16:21:686][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:16:21:686][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-[2025-01-31 00:16:21:745][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces. 
-[2025-01-31 00:16:21:751][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:16:21:751][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-[2025-01-31 00:16:21:757][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:16:21:757][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:16:21:757][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces. 
-[2025-01-31 00:16:22:1084][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
- Tomcat initialized with port 9000 (http) 
-[2025-01-31 00:16:22:1088][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
- Initializing ProtocolHandler ["http-nio-9000"] 
-[2025-01-31 00:16:22:1089][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Starting service [Tomcat] 
-[2025-01-31 00:16:22:1089][main] [32m INFO[0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
- Starting Servlet engine: [Apache Tomcat/10.1.34] 
-[2025-01-31 00:16:22:1108][main] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
- Initializing Spring embedded WebApplicationContext 
-[2025-01-31 00:16:22:1108][main] [32m INFO[0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
- Root WebApplicationContext: initialization completed in 850 ms 
-[2025-01-31 00:16:22:1248][main] [32m INFO[0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
- HHH000204: Processing PersistenceUnitInfo [name: default] 
-[2025-01-31 00:16:22:1268][main] [32m INFO[0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
- HHH000412: Hibernate ORM core version 6.6.4.Final 
-[2025-01-31 00:16:22:1279][main] [32m INFO[0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
- HHH000026: Second-level cache disabled 
-[2025-01-31 00:16:22:1383][main] [32m INFO[0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
- No LoadTimeWeaver setup: ignoring JPA class transformer 
-[2025-01-31 00:16:22:1395][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Starting... 
-[2025-01-31 00:16:22:1430][main] [32m INFO[0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
- HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@796613b7 
-[2025-01-31 00:16:22:1431][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Start completed. 
-[2025-01-31 00:16:22:1453][main] [32m INFO[0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
- HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 11.6.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown 
-[2025-01-31 00:16:22:1758][main] [32m INFO[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-[2025-01-31 00:16:22:1777][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
- Initialized JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:16:23:2076][main] [32m INFO[0;39m o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
- Global AuthenticationManager configured with UserDetailsService bean with name authService 
-[2025-01-31 00:16:23:2188][main] [33m WARN[0;39m o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m [32mrefresh[0;39m 
- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed 
-[2025-01-31 00:16:23:2297][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
- Closing JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:16:23:2300][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown initiated... 
-[2025-01-31 00:16:23:2301][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown completed. 
-[2025-01-31 00:16:23:2302][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Stopping service [Tomcat] 
-[2025-01-31 00:16:23:2311][main] [32m INFO[0;39m o.s.b.a.l.ConditionEvaluationReportLogger [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m [32mlogMessage[0;39m 
- 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
-[2025-01-31 00:16:23:2317][main] [31mERROR[0;39m o.s.boot.SpringApplication [36mo.s.b.SpringApplication[0;39m [32mreportFailure[0;39m 
- Application run failed 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:423)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.example.kotlinstudy.KotlinStudyApplicationKt.main(KotlinStudyApplication.kt:14)
-Caused by: java.lang.RuntimeException: Can't start redis server. Check logs for details. Redis process log: 
-5736:C 31 Jan 2025 00:16:23.132 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-5736:C 31 Jan 2025 00:16:23.132 * Redis version=7.2.3, bits=64, commit=00000000, modified=0, pid=5736, just started
-5736:C 31 Jan 2025 00:16:23.132 * Configuration loaded
-5736:M 31 Jan 2025 00:16:23.132 * monotonic clock: POSIX clock_gettime
-5736:M 31 Jan 2025 00:16:23.133 * Running mode=standalone, port=6379.
-5736:M 31 Jan 2025 00:16:23.133 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
-5736:M 31 Jan 2025 00:16:23.134 # Warning: Could not create server TCP listening socket *:6379: bind: Address already in use
-5736:M 31 Jan 2025 00:16:23.134 # Failed listening on port 6379 (tcp), aborting.
-	at com.example.kotlinstudy.config.redis.EmbeddedRedisConfig.init(EmbeddedRedisConfig.kt:46)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
-	... 20 common frames omitted
-[2025-01-31 00:16:33:178][background-preinit] [32m INFO[0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
- HV000001: Hibernate Validator 8.0.2.Final 
-[2025-01-31 00:16:33:592][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:16:33:593][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-[2025-01-31 00:16:33:648][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces. 
-[2025-01-31 00:16:33:653][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:16:33:653][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-[2025-01-31 00:16:33:659][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:16:33:659][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:16:33:659][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces. 
-[2025-01-31 00:16:34:961][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
- Tomcat initialized with port 9000 (http) 
-[2025-01-31 00:16:34:965][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
- Initializing ProtocolHandler ["http-nio-9000"] 
-[2025-01-31 00:16:34:966][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Starting service [Tomcat] 
-[2025-01-31 00:16:34:966][main] [32m INFO[0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
- Starting Servlet engine: [Apache Tomcat/10.1.34] 
-[2025-01-31 00:16:34:984][main] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
- Initializing Spring embedded WebApplicationContext 
-[2025-01-31 00:16:34:984][main] [32m INFO[0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
- Root WebApplicationContext: initialization completed in 774 ms 
-[2025-01-31 00:16:34:1121][main] [32m INFO[0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
- HHH000204: Processing PersistenceUnitInfo [name: default] 
-[2025-01-31 00:16:34:1137][main] [32m INFO[0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
- HHH000412: Hibernate ORM core version 6.6.4.Final 
-[2025-01-31 00:16:34:1147][main] [32m INFO[0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
- HHH000026: Second-level cache disabled 
-[2025-01-31 00:16:34:1239][main] [32m INFO[0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
- No LoadTimeWeaver setup: ignoring JPA class transformer 
-[2025-01-31 00:16:34:1250][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Starting... 
-[2025-01-31 00:16:34:1286][main] [32m INFO[0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
- HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@674fd531 
-[2025-01-31 00:16:34:1286][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Start completed. 
-[2025-01-31 00:16:34:1306][main] [32m INFO[0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
- HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 11.6.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown 
-[2025-01-31 00:16:34:1596][main] [32m INFO[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-[2025-01-31 00:16:34:1617][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
- Initialized JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:16:35:1887][main] [32m INFO[0;39m o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
- Global AuthenticationManager configured with UserDetailsService bean with name authService 
-[2025-01-31 00:16:35:1994][main] [33m WARN[0;39m o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m [32mrefresh[0;39m 
- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed 
-[2025-01-31 00:16:35:2101][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
- Closing JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:16:35:2104][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown initiated... 
-[2025-01-31 00:16:35:2106][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown completed. 
-[2025-01-31 00:16:35:2107][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Stopping service [Tomcat] 
-[2025-01-31 00:16:35:2118][main] [32m INFO[0;39m o.s.b.a.l.ConditionEvaluationReportLogger [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m [32mlogMessage[0;39m 
- 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
-[2025-01-31 00:16:35:2125][main] [31mERROR[0;39m o.s.boot.SpringApplication [36mo.s.b.SpringApplication[0;39m [32mreportFailure[0;39m 
- Application run failed 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'embeddedRedisConfig': Invocation of init method failed
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:423)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.example.kotlinstudy.KotlinStudyApplicationKt.main(KotlinStudyApplication.kt:14)
-Caused by: java.lang.RuntimeException: Can't start redis server. Check logs for details. Redis process log: 
-5743:C 31 Jan 2025 00:16:35.255 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-5743:C 31 Jan 2025 00:16:35.255 * Redis version=7.2.3, bits=64, commit=00000000, modified=0, pid=5743, just started
-5743:C 31 Jan 2025 00:16:35.255 * Configuration loaded
-5743:M 31 Jan 2025 00:16:35.255 * monotonic clock: POSIX clock_gettime
-5743:M 31 Jan 2025 00:16:35.256 * Running mode=standalone, port=6379.
-5743:M 31 Jan 2025 00:16:35.256 # WARNING: The TCP backlog setting of 511 cannot be enforced because kern.ipc.somaxconn is set to the lower value of 128.
-5743:M 31 Jan 2025 00:16:35.256 # Warning: Could not create server TCP listening socket *:6379: bind: Address already in use
-5743:M 31 Jan 2025 00:16:35.256 # Failed listening on port 6379 (tcp), aborting.
-	at com.example.kotlinstudy.config.redis.EmbeddedRedisConfig.init(EmbeddedRedisConfig.kt:46)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219)
-	... 20 common frames omitted
-[2025-01-31 00:18:36:171][background-preinit] [32m INFO[0;39m o.h.validator.internal.util.Version [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
- HV000001: Hibernate Validator 8.0.2.Final 
-[2025-01-31 00:18:36:565][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:18:36:566][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-[2025-01-31 00:18:36:619][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces. 
-[2025-01-31 00:18:36:623][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-01-31 00:18:36:623][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-[2025-01-31 00:18:36:628][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:18:36:628][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationExtensionSupport [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-01-31 00:18:36:628][main] [32m INFO[0;39m o.s.d.r.c.RepositoryConfigurationDelegate [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces. 
-[2025-01-31 00:18:37:924][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
- Tomcat initialized with port 9000 (http) 
-[2025-01-31 00:18:37:928][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
- Initializing ProtocolHandler ["http-nio-9000"] 
-[2025-01-31 00:18:37:929][main] [32m INFO[0;39m o.a.catalina.core.StandardService [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Starting service [Tomcat] 
-[2025-01-31 00:18:37:929][main] [32m INFO[0;39m o.a.catalina.core.StandardEngine [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
- Starting Servlet engine: [Apache Tomcat/10.1.34] 
-[2025-01-31 00:18:37:947][main] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
- Initializing Spring embedded WebApplicationContext 
-[2025-01-31 00:18:37:948][main] [32m INFO[0;39m o.s.b.w.s.c.ServletWebServerApplicationContext [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
- Root WebApplicationContext: initialization completed in 746 ms 
-[2025-01-31 00:18:37:1084][main] [32m INFO[0;39m o.h.jpa.internal.util.LogHelper [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
- HHH000204: Processing PersistenceUnitInfo [name: default] 
-[2025-01-31 00:18:37:1099][main] [32m INFO[0;39m org.hibernate.Version [36mo.h.Version[0;39m [32mlogVersion[0;39m 
- HHH000412: Hibernate ORM core version 6.6.4.Final 
-[2025-01-31 00:18:37:1109][main] [32m INFO[0;39m o.h.c.i.RegionFactoryInitiator [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
- HHH000026: Second-level cache disabled 
-[2025-01-31 00:18:37:1204][main] [32m INFO[0;39m o.s.o.j.p.SpringPersistenceUnitInfo [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
- No LoadTimeWeaver setup: ignoring JPA class transformer 
-[2025-01-31 00:18:37:1215][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Starting... 
-[2025-01-31 00:18:37:1248][main] [32m INFO[0;39m com.zaxxer.hikari.pool.HikariPool [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
- HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6130a6f5 
-[2025-01-31 00:18:37:1249][main] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Start completed. 
-[2025-01-31 00:18:37:1268][main] [32m INFO[0;39m o.hibernate.orm.connections.pooling [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
- HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 11.6.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown 
-[2025-01-31 00:18:37:1554][main] [32m INFO[0;39m o.h.e.t.j.p.i.JtaPlatformInitiator [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-[2025-01-31 00:18:37:1574][main] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
- Initialized JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:18:38:1833][main] [32m INFO[0;39m o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
- Global AuthenticationManager configured with UserDetailsService bean with name authService 
-[2025-01-31 00:18:38:2170][main] [32m INFO[0;39m o.s.b.a.e.web.EndpointLinksResolver [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+[2025-02-01 18:55:35:3348][main] [32m INFO[0;39m [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
  Exposing 1 endpoint beneath base path '/actuator' 
-[2025-01-31 00:18:38:2530][main] [32m INFO[0;39m o.a.coyote.http11.Http11NioProtocol [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+[2025-02-01 18:55:35:3422][main] [33m WARN[0;39m [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-01 18:55:35:3763][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
  Starting ProtocolHandler ["http-nio-9000"] 
-[2025-01-31 00:18:38:2534][main] [32m INFO[0;39m o.s.b.w.e.tomcat.TomcatWebServer [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+[2025-02-01 18:55:35:3768][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
  Tomcat started on port 9000 (http) with context path '/' 
-[2025-01-31 00:18:39:3072][RMI TCP Connection(1)-127.0.0.1] [32m INFO[0;39m o.a.c.c.C.[Tomcat].[localhost].[/] [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+[2025-02-01 18:55:36:4066][RMI TCP Connection(2)-127.0.0.1] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
  Initializing Spring DispatcherServlet 'dispatcherServlet' 
-[2025-01-31 00:18:39:3072][RMI TCP Connection(1)-127.0.0.1] [32m INFO[0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+[2025-02-01 18:55:36:4066][RMI TCP Connection(2)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
  Initializing Servlet 'dispatcherServlet' 
-[2025-01-31 00:18:39:3073][RMI TCP Connection(1)-127.0.0.1] [32m INFO[0;39m o.s.web.servlet.DispatcherServlet [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+[2025-02-01 18:55:36:4067][RMI TCP Connection(2)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
  Completed initialization in 1 ms 
-[2025-01-31 00:18:44:8639][RedisInstanceCleaner] [32m INFO[0;39m r.embedded.AbstractRedisInstance [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+[2025-02-01 18:55:43:11658][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
  Stopping redis server... 
-[2025-01-31 00:18:44:8641][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+[2025-02-01 18:55:43:11661][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
  Commencing graceful shutdown. Waiting for active requests to complete 
-[2025-01-31 00:18:44:8643][tomcat-shutdown] [32m INFO[0;39m o.s.b.w.e.tomcat.GracefulShutdown [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+[2025-02-01 18:55:43:11662][tomcat-shutdown] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
  Graceful shutdown complete 
-[2025-01-31 00:18:44:8711][RedisInstanceCleaner] [32m INFO[0;39m r.embedded.AbstractRedisInstance [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+[2025-02-01 18:55:43:11691][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
  Redis exited 
-[2025-01-31 00:18:44:8765][SpringApplicationShutdownHook] [32m INFO[0;39m o.s.o.j.LocalContainerEntityManagerFactoryBean [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+[2025-02-01 18:55:43:11774][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
  Closing JPA EntityManagerFactory for persistence unit 'default' 
-[2025-01-31 00:18:44:8767][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+[2025-02-01 18:55:43:11776][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
  HikariPool-1 - Shutdown initiated... 
-[2025-01-31 00:18:44:8770][SpringApplicationShutdownHook] [32m INFO[0;39m com.zaxxer.hikari.HikariDataSource [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+[2025-02-01 18:55:43:11778][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-01 18:55:50:185][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-01 18:55:50:715][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 18:55:50:715][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-01 18:55:50:774][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces. 
+[2025-02-01 18:55:50:779][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 18:55:50:779][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-01 18:55:50:785][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 18:55:50:785][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 18:55:50:785][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
+[2025-02-01 18:55:51:1097][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2025-02-01 18:55:51:1101][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2025-02-01 18:55:51:1102][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2025-02-01 18:55:51:1102][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2025-02-01 18:55:51:1123][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2025-02-01 18:55:51:1123][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 906 ms 
+[2025-02-01 18:55:51:1288][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-01 18:55:51:1305][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-01 18:55:51:1317][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-01 18:55:51:1415][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-01 18:55:51:1425][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-01 18:55:51:1459][main] [32m INFO[0;39m [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@38394e76 
+[2025-02-01 18:55:51:1460][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-01 18:55:51:1480][main] [32m INFO[0;39m [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-01 18:55:51:1787][main] [32m INFO[0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-01 18:55:51:1808][main] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-01 18:55:52:2085][main] [32m INFO[0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-01 18:55:52:2459][main] [32m INFO[0;39m [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-01 18:55:52:2517][main] [33m WARN[0;39m [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-01 18:55:52:2833][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2025-02-01 18:55:52:2837][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2025-02-01 18:55:53:3054][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2025-02-01 18:55:53:3054][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2025-02-01 18:55:53:3055][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 1 ms 
+[2025-02-01 18:59:08:198713][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Stopping redis server... 
+[2025-02-01 18:59:08:198716][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2025-02-01 18:59:08:198718][tomcat-shutdown] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2025-02-01 18:59:08:198794][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Redis exited 
+[2025-02-01 18:59:08:198834][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-01 18:59:08:198835][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-01 18:59:08:198837][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-01 18:59:10:208][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-01 18:59:10:662][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 18:59:10:663][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-01 18:59:10:723][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces. 
+[2025-02-01 18:59:10:728][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 18:59:10:728][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-01 18:59:10:734][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 18:59:10:734][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 18:59:10:734][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
+[2025-02-01 18:59:11:1085][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2025-02-01 18:59:11:1090][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2025-02-01 18:59:11:1090][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2025-02-01 18:59:11:1090][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2025-02-01 18:59:11:1109][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2025-02-01 18:59:11:1110][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 858 ms 
+[2025-02-01 18:59:11:1255][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-01 18:59:11:1274][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-01 18:59:11:1285][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-01 18:59:11:1391][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-01 18:59:11:1401][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-01 18:59:11:1405][main] [33m WARN[0;39m [36mo.h.e.j.e.i.JdbcEnvironmentInitiator[0;39m [32mgetJdbcEnvironmentUsingJdbcMetadata[0;39m 
+ HHH000342: Could not obtain connection to query metadata 
+java.lang.RuntimeException: Driver org.mariadb.jdbc.Driver claims to not accept jdbcUrl, jdbc:p6spy:mariadb://localhost:3306/kotlinStudy
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:109)
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:327)
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:113)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:91)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.lambda$afterPropertiesSet$0(RepositoryFragmentsFactoryBean.java:68)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.afterPropertiesSet(RepositoryFragmentsFactoryBean.java:69)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4426)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.kotlinstudy.KotlinStudyApplicationKt.main(KotlinStudyApplication.kt:14)
+[2025-02-01 18:59:11:1405][main] [31mERROR[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided) 
+[2025-02-01 18:59:11:1406][main] [31mERROR[0;39m [36mo.s.b.w.e.t.TomcatStarter[0;39m [32monStartup[0;39m 
+ Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'securityConfig' defined in file [/Users/this_leechunghyeon/Documents/DevelopmentProject/kotlinStudy/build/classes/kotlin/main/com/example/kotlinstudy/config/security/SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'memberRepository' defined in com.example.kotlinstudy.domain.member.MemberRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpa.MemberRepository.fragments#0' while setting bean property 'repositoryFragments' 
+[2025-02-01 18:59:11:1415][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Stopping service [Tomcat] 
+[2025-02-01 18:59:11:1416][main] [33m WARN[0;39m [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m [32mrefresh[0;39m 
+ Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server 
+[2025-02-01 18:59:11:1424][main] [32m INFO[0;39m [36mo.s.b.a.l.ConditionEvaluationReportLogger[0;39m [32mlogMessage[0;39m 
+ 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled. 
+[2025-02-01 18:59:11:1429][main] [31mERROR[0;39m [36mo.s.b.SpringApplication[0;39m [32mreportFailure[0;39m 
+ Application run failed 
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:165)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.example.kotlinstudy.KotlinStudyApplicationKt.main(KotlinStudyApplication.kt:14)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:107)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:516)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:222)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:188)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [/Users/this_leechunghyeon/Documents/DevelopmentProject/kotlinStudy/build/classes/kotlin/main/com/example/kotlinstudy/config/security/SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'memberRepository' defined in com.example.kotlinstudy.domain.member.MemberRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpa.MemberRepository.fragments#0' while setting bean property 'repositoryFragments'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:266)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:240)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4426)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:772)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:203)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:870)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:437)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:128)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberRepository' defined in com.example.kotlinstudy.domain.member.MemberRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpa.MemberRepository.fragments#0' while setting bean property 'repositoryFragments'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 63 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpa.MemberRepository.fragments#0': Error creating bean with name 'memberCustomRepositoryImplFragment': Cannot resolve reference to bean 'memberCustomRepositoryImpl' while setting constructor argument
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 76 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberCustomRepositoryImplFragment': Cannot resolve reference to bean 'memberCustomRepositoryImpl' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.lambda$afterPropertiesSet$0(RepositoryFragmentsFactoryBean.java:68)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.RepositoryFragmentsFactoryBean.afterPropertiesSet(RepositoryFragmentsFactoryBean.java:69)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 83 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberCustomRepositoryImpl' defined in file [/Users/this_leechunghyeon/Documents/DevelopmentProject/kotlinStudy/build/classes/kotlin/main/com/example/kotlinstudy/domain/member/MemberCustomRepositoryImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'springDataQueryFactory' defined in class path resource [com/linecorp/kotlinjdsl/spring/data/autoconfigure/SpringDataQueryFactoryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springDataQueryFactory' parameter 0: Error creating bean with name 'criteriaQueryCreator' defined in class path resource [com/linecorp/kotlinjdsl/spring/data/autoconfigure/QueryCreatorConfiguration.class]: Unsatisfied dependency expressed through method 'criteriaQueryCreator' parameter 0: Error creating bean with name 'jpaSharedEM_AWC_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1377)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 105 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'springDataQueryFactory' defined in class path resource [com/linecorp/kotlinjdsl/spring/data/autoconfigure/SpringDataQueryFactoryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'springDataQueryFactory' parameter 0: Error creating bean with name 'criteriaQueryCreator' defined in class path resource [com/linecorp/kotlinjdsl/spring/data/autoconfigure/QueryCreatorConfiguration.class]: Unsatisfied dependency expressed through method 'criteriaQueryCreator' parameter 0: Error creating bean with name 'jpaSharedEM_AWC_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 115 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'criteriaQueryCreator' defined in class path resource [com/linecorp/kotlinjdsl/spring/data/autoconfigure/QueryCreatorConfiguration.class]: Unsatisfied dependency expressed through method 'criteriaQueryCreator' parameter 0: Error creating bean with name 'jpaSharedEM_AWC_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 129 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_AWC_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:691)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 142 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:289)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 158 common frames omitted
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	... 165 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:392)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 180 common frames omitted
+[2025-02-01 18:59:19:181][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-01 18:59:20:657][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 18:59:20:657][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-01 18:59:20:717][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces. 
+[2025-02-01 18:59:20:722][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 18:59:20:722][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-01 18:59:20:728][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 18:59:20:728][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 18:59:20:728][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
+[2025-02-01 18:59:20:1041][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2025-02-01 18:59:20:1045][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2025-02-01 18:59:20:1046][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2025-02-01 18:59:20:1046][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2025-02-01 18:59:20:1067][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2025-02-01 18:59:20:1068][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 853 ms 
+[2025-02-01 18:59:20:1211][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-01 18:59:20:1227][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-01 18:59:20:1237][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-01 18:59:20:1349][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-01 18:59:20:1361][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-01 18:59:20:1401][main] [32m INFO[0;39m [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@575cfec1 
+[2025-02-01 18:59:20:1402][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-01 18:59:20:1428][main] [32m INFO[0;39m [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-01 18:59:21:1753][main] [32m INFO[0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-01 18:59:21:1773][main] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-01 18:59:21:2058][main] [32m INFO[0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-01 18:59:22:2606][main] [32m INFO[0;39m [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-01 18:59:22:2670][main] [33m WARN[0;39m [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-01 18:59:22:3036][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2025-02-01 18:59:22:3041][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2025-02-01 18:59:23:3571][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2025-02-01 18:59:23:3571][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2025-02-01 18:59:23:3572][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 1 ms 
+[2025-02-01 19:01:21:121692][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Stopping redis server... 
+[2025-02-01 19:01:21:121694][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2025-02-01 19:01:21:121696][tomcat-shutdown] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2025-02-01 19:01:21:121765][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Redis exited 
+[2025-02-01 19:01:21:121812][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-01 19:01:21:121814][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-01 19:01:21:121815][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-01 19:02:01:182][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-01 19:02:02:623][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 19:02:02:624][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-01 19:02:02:689][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces. 
+[2025-02-01 19:02:02:695][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 19:02:02:695][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-01 19:02:02:701][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 19:02:02:701][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 19:02:02:701][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
+[2025-02-01 19:02:02:1013][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2025-02-01 19:02:02:1017][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2025-02-01 19:02:02:1018][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2025-02-01 19:02:02:1018][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2025-02-01 19:02:02:1037][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2025-02-01 19:02:02:1037][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 822 ms 
+[2025-02-01 19:02:02:1179][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-01 19:02:02:1198][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-01 19:02:02:1209][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-01 19:02:02:1307][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-01 19:02:02:1318][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-01 19:02:02:1352][main] [32m INFO[0;39m [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@606f0f70 
+[2025-02-01 19:02:02:1353][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-01 19:02:02:1374][main] [32m INFO[0;39m [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-01 19:02:03:1725][main] [32m INFO[0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-01 19:02:03:1747][main] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-01 19:02:03:2089][main] [32m INFO[0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-01 19:02:04:2770][main] [32m INFO[0;39m [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-01 19:02:04:2825][main] [33m WARN[0;39m [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-01 19:02:04:3140][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2025-02-01 19:02:04:3145][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2025-02-01 19:02:05:3522][RMI TCP Connection(2)-127.0.0.1] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2025-02-01 19:02:05:3522][RMI TCP Connection(2)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2025-02-01 19:02:05:3523][RMI TCP Connection(2)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 1 ms 
+[2025-02-01 19:02:40:39141][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Stopping redis server... 
+[2025-02-01 19:02:40:39143][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2025-02-01 19:02:40:39145][tomcat-shutdown] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2025-02-01 19:02:40:39199][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Redis exited 
+[2025-02-01 19:02:40:39261][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-01 19:02:40:39262][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-01 19:02:40:39265][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-01 19:08:44:222][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-01 19:08:44:677][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 19:08:44:678][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-01 19:08:44:742][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces. 
+[2025-02-01 19:08:44:748][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-01 19:08:44:748][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-01 19:08:44:755][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 19:08:44:755][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-01 19:08:44:755][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
+[2025-02-01 19:08:45:1088][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2025-02-01 19:08:45:1093][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2025-02-01 19:08:45:1093][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2025-02-01 19:08:45:1093][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2025-02-01 19:08:45:1112][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2025-02-01 19:08:45:1112][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 853 ms 
+[2025-02-01 19:08:45:1254][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-01 19:08:45:1273][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-01 19:08:45:1284][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-01 19:08:45:1398][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-01 19:08:45:1411][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-01 19:08:45:1455][main] [32m INFO[0;39m [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@c4ca86a 
+[2025-02-01 19:08:45:1456][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-01 19:08:45:1483][main] [32m INFO[0;39m [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-01 19:08:45:1858][main] [32m INFO[0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-01 19:08:45:1879][main] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-01 19:08:46:2166][main] [32m INFO[0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-01 19:08:46:2844][main] [32m INFO[0;39m [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-01 19:08:46:2902][main] [33m WARN[0;39m [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-01 19:08:47:3220][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2025-02-01 19:08:47:3224][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2025-02-01 19:08:47:3478][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2025-02-01 19:08:47:3478][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2025-02-01 19:08:47:3480][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 1 ms 
+[2025-02-01 19:10:10:86426][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Stopping redis server... 
+[2025-02-01 19:10:10:86427][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2025-02-01 19:10:10:86429][tomcat-shutdown] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2025-02-01 19:10:10:86457][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Redis exited 
+[2025-02-01 19:10:10:86545][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-01 19:10:10:86549][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-01 19:10:10:86552][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
  HikariPool-1 - Shutdown completed. 
