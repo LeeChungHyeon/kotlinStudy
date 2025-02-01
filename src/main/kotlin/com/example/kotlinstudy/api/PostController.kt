@@ -3,7 +3,6 @@ package com.example.kotlinstudy.api
 import com.example.kotlinstudy.domain.post.PostSaveReq
 import com.example.kotlinstudy.service.PostService
 import com.example.kotlinstudy.util.dto.SearchCondition
-import com.example.kotlinstudy.util.dto.searchCondition
 import com.example.kotlinstudy.util.value.CmResDto
 import jakarta.validation.Valid
 import org.springframework.data.domain.Pageable
@@ -12,7 +11,6 @@ import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping("/v1")
 class PostController(
     private val postService: PostService
 ) {

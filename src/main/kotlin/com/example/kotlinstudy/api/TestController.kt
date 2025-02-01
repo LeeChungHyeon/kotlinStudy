@@ -1,7 +1,7 @@
 package com.example.kotlinstudy.api
 
+import com.example.kotlinstudy.util.dto.SearchCondition
 import com.example.kotlinstudy.util.dto.SearchType
-import com.example.kotlinstudy.util.dto.searchCondition
 import mu.KotlinLogging
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
@@ -19,7 +19,7 @@ class TestController(
     }
 
     @GetMapping("/enum")
-    fun enumTest(searchCondition: searchCondition): String {
+    fun enumTest(searchCondition: SearchCondition): String {
         log.info {
             """
             $searchCondition
