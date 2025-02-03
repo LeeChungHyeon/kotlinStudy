@@ -1,6 +1,7 @@
 package com.example.kotlinstudy.domain.post
 
 import com.example.kotlinstudy.domain.member.Member
+import com.fasterxml.jackson.annotation.JsonFormat
 import jakarta.persistence.*
 import org.springframework.data.annotation.CreatedDate
 import org.springframework.data.annotation.LastModifiedDate
@@ -31,11 +32,13 @@ class Post(
     var member: Member = member
         protected set
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
     @CreatedDate
     @Column(name = "create_at", nullable = false, updatable = false)
     var createAt: LocalDateTime = LocalDateTime.now()
         protected set
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
     @LastModifiedDate
     @Column(name = "update_at")
     var updateAt: LocalDateTime = LocalDateTime.now()

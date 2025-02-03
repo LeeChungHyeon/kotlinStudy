@@ -1,4 +1,4 @@
-package com.example.kotlinstudy.api
+package com.example.kotlinstudy.web
 
 import com.example.kotlinstudy.domain.post.PostSaveReq
 import com.example.kotlinstudy.service.PostService
@@ -9,6 +9,7 @@ import org.springframework.data.domain.Pageable
 import org.springframework.data.web.PageableDefault
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
+import org.springframework.web.multipart.MultipartFile
 
 @RestController
 class PostController(
@@ -34,5 +35,10 @@ class PostController(
     @PostMapping("/post")
     fun save(@Valid @RequestBody dto: PostSaveReq): CmResDto<*> {
         return CmResDto(HttpStatus.OK, "save post", postService.savePost(dto))
+    }
+
+    @PostMapping("/post/img")
+    fun savePostImg(image: MultipartFile): CmResDto<*> {
+        return CmResDto(HttpStatus.OK,"save post img", postService.savePostImg(image))
     }
 }

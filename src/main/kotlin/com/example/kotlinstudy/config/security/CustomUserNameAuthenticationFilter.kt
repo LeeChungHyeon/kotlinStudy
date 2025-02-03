@@ -4,8 +4,8 @@ import com.example.kotlinstudy.domain.InMemoryRepository
 import com.example.kotlinstudy.domain.member.LoginDto
 import com.example.kotlinstudy.util.CookieProvider
 import com.example.kotlinstudy.util.CookieProvider.CookieName
+import com.example.kotlinstudy.util.Script
 import com.example.kotlinstudy.util.value.CmResDto
-import com.example.kotlinstudy.util.func.responseData
 import com.fasterxml.jackson.databind.ObjectMapper
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
@@ -70,7 +70,7 @@ class CustomUserNameAuthenticationFilter(
         memoryRepository.save(refreshToken, objectMapper.writeValueAsString(principalDetails))
 
         val jsonResult = objectMapper.writeValueAsString(CmResDto(HttpStatus.OK, "login success", principalDetails.member))
-        responseData(response, jsonResult)
+        Script.responseData(response, jsonResult)
 
     }
 }

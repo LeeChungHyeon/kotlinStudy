@@ -22,7 +22,7 @@ class LoggerAspect {
 
     val log = KotlinLogging.logger {}
 
-    @Pointcut("execution(* com.example.kotlinstudy.api.*Controller.*(..))")
+    @Pointcut("execution(* com.example.kotlinstudy.web.*Controller.*(..))")
     private fun controllerCut() = Unit
 
     @Before("controllerCut()")

@@ -12,18 +12,20 @@ data class PostSaveReq(
     val content: String?,
     @field:NotNull(message = "require memberId")
     val memberId: Long?,
-)
-
-fun PostSaveReq.toEntity(): Post {
-    return Post(
-        title = this.title ?: "",
-        content = this.content ?: "",
-        member = Member.createFakeMember(this.memberId!!),
-        createAt = LocalDateTime.now(),
-        updateAt = LocalDateTime.now()
-    )
+) {
+    fun toEntity(): Post {
+        return Post(
+            title = this.title ?: "",
+            content = this.content ?: "",
+            member = Member.createFakeMember(this.memberId!!),
+            createAt = LocalDateTime.now(),
+            updateAt = LocalDateTime.now()
+        )
+    }
 
 }
+
+
 
 data class PostRes(
     val id: Long,

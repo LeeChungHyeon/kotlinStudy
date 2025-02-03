@@ -1,4 +1,4 @@
-package com.example.kotlinstudy.api
+package com.example.kotlinstudy.web
 
 import com.example.kotlinstudy.domain.member.LoginDto
 import com.example.kotlinstudy.service.AuthService

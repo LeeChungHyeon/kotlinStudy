@@ -6,10 +6,16 @@ object CustomAopObject {
 
     private val log = KotlinLogging.logger {}
 
-    fun highOrder(func:()->Unit) {
-        log.info {"before"}
 
-        log.info {"after"}
+    fun wrapTryCatchWithVoidFunc(func: ()->Unit) {
+
+        try {
+            func()
+        } catch (e: Exception) {
+            log.error { e.stackTraceToString() }
+            //throw e
+        }
+
     }
 
 }

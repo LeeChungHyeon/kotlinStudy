@@ -1,6 +1,7 @@
 package com.example.kotlinstudy.domain.member
 
 import com.example.kotlinstudy.config.BeanAccesseor
+import com.fasterxml.jackson.annotation.JsonFormat
 import jakarta.validation.constraints.NotNull
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
@@ -33,6 +34,9 @@ data class MemberRes(
     val email: String,
     val password: String,
     val role: Role,
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
     val createdAt: LocalDateTime,
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
     val updatedAt: LocalDateTime,
 )

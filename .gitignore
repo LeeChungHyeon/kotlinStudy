@@ -25,7 +25,8 @@ bin/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-logs
+logs/
+logback.log
 
 ### NetBeans ###
 /nbproject/private/
