@@ -32,28 +32,28 @@ class Post(
     var member: Member = member
         protected set
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
     @CreatedDate
     @Column(name = "create_at", nullable = false, updatable = false)
     var createAt: LocalDateTime = LocalDateTime.now()
         protected set
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
     @LastModifiedDate
     @Column(name = "update_at")
     var updateAt: LocalDateTime = LocalDateTime.now()
         protected set
+
+
+    fun toDto(): PostRes {
+        return PostRes(
+            id = this.id!!,
+            title = this.title,
+            content = this.content,
+            member = this.member.toDto()
+        )
+    }
 
     override fun toString(): String {
         return "Post(id=$id, title='$title', content='$content', member=$member)"
     }
 }
 
-fun Post.toDto(): PostRes {
-    return PostRes(
-        id = this.id!!,
-        title = this.title,
-        content = this.content,
-        member = this.member.toDto()
-    )
-}

@@ -34,9 +34,6 @@ data class MemberRes(
     val email: String,
     val password: String,
     val role: Role,
-
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
     val createdAt: LocalDateTime,
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
     val updatedAt: LocalDateTime,
 )
