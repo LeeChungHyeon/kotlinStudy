@@ -10,6 +10,8 @@ plugins {
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
 
+extra["ioCloudVersion"] = "2.4.2"
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
@@ -22,12 +24,21 @@ repositories {
 
 extra["snippetsDir"] = file("build/generated-snippets")
 
+dependencyManagement {
+    imports {
+        mavenBom("io.awspring.cloud:spring-cloud-aws-dependencies:${property("ioCloudVersion")}")
+    }
+}
+
 dependencies {
     implementation("com.auth0:java-jwt:3.19.2")
 
     // https://mvnrepository.com/artifact/net.jodah/expiringmap
     implementation("net.jodah:expiringmap:0.5.10")
     implementation("it.ozimov:embedded-redis:0.7.3") { exclude(group = "org.slf4j", module = "slf4j-simple") }
+
+    implementation("io.awspring.cloud:spring-cloud-starter-aws")
+    implementation("io.findify:s3mock_2.13:0.2.6")
 
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     //implementation("org.springframework.boot:spring-boot-starter-cache")
