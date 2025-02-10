@@ -1,6 +1,7 @@
 package com.example.kotlinstudy.service
 
 import com.example.kotlinstudy.domain.post.*
+import com.example.kotlinstudy.exception.PostNotFoundException
 import com.example.kotlinstudy.service.common.FileUploaderService
 import com.example.kotlinstudy.util.dto.SearchCondition
 import org.springframework.data.domain.Page
@@ -37,7 +38,7 @@ class PostService(
 
     @Transactional(readOnly = true)
     fun findPostById(id: Long): PostRes {
-        return postRepository.findById(id).orElseThrow().toDto()
+        return postRepository.findById(id).orElseThrow { throw PostNotFoundException(id.toString()) }.toDto()
     }
 
 

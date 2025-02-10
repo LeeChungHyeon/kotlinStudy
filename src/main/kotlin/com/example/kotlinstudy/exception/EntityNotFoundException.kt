@@ -4,3 +4,7 @@ sealed class EntityNotFoundException(message: String?) : BusinessException(messa
 }
 
 class MemberNotFoundException(id: String) : EntityNotFoundException("$id not found")
+
+class CommentNotFoundException(id: String) : EntityNotFoundException("$id not found")
+
+class PostNotFoundException(id: String) : EntityNotFoundException("$id not found")
