@@ -6,7 +6,6 @@ import com.example.kotlinstudy.domain.post.Post
 import com.example.kotlinstudy.domain.post.PostRes
 
 data class CommentSaveReq(
-    val id: Long,
     val memberId: Long,
     val content: String,
     val postId: Long,
@@ -15,7 +14,6 @@ data class CommentSaveReq(
 
     fun toEntity(post: Post): Comment {
         return Comment(
-            id = id,
             content = this.content,
             post = post,
             member = Member.createFakeMember(this.memberId)

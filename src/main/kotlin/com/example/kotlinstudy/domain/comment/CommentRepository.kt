@@ -1,16 +1,22 @@
 package com.example.kotlinstudy.domain.comment
 
+import com.linecorp.kotlinjdsl.querydsl.expression.col
+import com.linecorp.kotlinjdsl.querydsl.expression.column
 import com.linecorp.kotlinjdsl.spring.data.SpringDataQueryFactory
+import com.linecorp.kotlinjdsl.spring.data.listQuery
 import jakarta.persistence.EntityManager
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 import org.springframework.util.Assert
+import kotlin.reflect.KProperty1
 
 interface CommentRepository {
 
     fun saveComment(comment: Comment): Comment
 
     fun saveCommentClouser(idDescendant: Long, idAncestor: Long?): Int
+
+    fun findCommentByAncestorComment(idAncestor: Long): List<Comment>
 }
 
 @Repository
@@ -35,9 +41,9 @@ class CommentRepositoryImpl (
 
         val sql = """
             INSERT INTO Comment_closure
-            (id_ancestor, id_descendant, depth, updated_at, created_at)
+            ( id_ancestor, id_descendant, depth, update_at, create_at )
             VALUES
-            ($idAncestor, $idDescendant, 0, now(), now())
+            ( $idAncestor, $idDescendant, 0, now(), now() )
         """.trimIndent()
 
         executeCount += em.createNativeQuery(sql).executeUpdate()
@@ -45,16 +51,16 @@ class CommentRepositoryImpl (
         if (idAncestor != null) {
             executeCount += em.createNativeQuery(
                 """
-                    INSERT INTO comment_closure
-                    (id_ancestor, id_descendant, depth, updated_at, created_at)
-                    select 
-                    cc.id_ancestor,
-                    c.id_descendant,
-                    cc.depth + c.depth + 1,
-                    c.updated_at
-                    c.created_at
-                    from comment_closure as cc, comment_closure as c 
-                    where cc.id_descendant = $idAncestor and c.id_ancestor = $idDescendant
+                INSERT into Comment_closure
+                ( id_ancestor, id_descendant, depth, update_at, create_at )
+                SELECT
+                cc.id_ancestor,
+                c.id_descendant,
+                cc.depth + c.depth + 1,
+                c.update_at,
+                c.create_at
+                from Comment_closure as cc, Comment_closure as c
+                where cc.id_descendant = $idAncestor and c.id_ancestor = $idDescendant
                 """.trimIndent()
             ).executeUpdate()
         }
@@ -63,7 +69,19 @@ class CommentRepositoryImpl (
 
     }
 
-    
+    override fun findCommentByAncestorComment(idAncestor: Long): List<Comment> {
+        return queryFactory.listQuery<Comment> {
+            select(entity(Comment::class))
+            from(entity(Comment::class))
+            join(
+                entity(CommentClosure::class),
+                on(entity(Comment::class).equal(column(CommentClosure::idDescendant)))
+            )
+            where(
+                nestedCol(col(CommentClosure::idAncestor as KProperty1<CommentClosure, Comment>), Comment::id).equal(idAncestor)
+            )
+        }
+    }
 
 }
 

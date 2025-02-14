@@ -31,6 +31,9 @@ dependencyManagement {
 }
 
 dependencies {
+
+    implementation("com.github.okihouse:autocomplete:1.0.2")
+
     implementation("com.auth0:java-jwt:3.19.2")
 
     // https://mvnrepository.com/artifact/net.jodah/expiringmap

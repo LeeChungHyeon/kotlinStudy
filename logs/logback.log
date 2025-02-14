@@ -1,131 +1,36 @@
-[2025-02-05 16:27:40:271][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+[2025-02-11 13:01:20:294][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
  HV000001: Hibernate Validator 8.0.2.Final 
-[2025-02-05 16:27:41:786][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+[2025-02-11 13:01:21:846][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
  Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-02-05 16:27:41:787][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+[2025-02-11 13:01:21:847][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
  Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-[2025-02-05 16:27:41:853][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces. 
-[2025-02-05 16:27:41:859][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+[2025-02-11 13:01:21:915][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:01:21:923][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
  Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-02-05 16:27:41:859][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+[2025-02-11 13:01:21:924][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
  Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-[2025-02-05 16:27:41:866][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.comment.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-02-05 16:27:41:866][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+[2025-02-11 13:01:21:932][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-02-05 16:27:41:866][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+[2025-02-11 13:01:21:933][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-02-05 16:27:41:866][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
-[2025-02-05 16:27:41:1232][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
- Tomcat initialized with port 9000 (http) 
-[2025-02-05 16:27:41:1236][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
- Initializing ProtocolHandler ["http-nio-9000"] 
-[2025-02-05 16:27:41:1237][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Starting service [Tomcat] 
-[2025-02-05 16:27:41:1237][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
- Starting Servlet engine: [Apache Tomcat/10.1.34] 
-[2025-02-05 16:27:41:1258][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
- Initializing Spring embedded WebApplicationContext 
-[2025-02-05 16:27:41:1258][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
- Root WebApplicationContext: initialization completed in 950 ms 
-[2025-02-05 16:27:41:1410][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
- HHH000204: Processing PersistenceUnitInfo [name: default] 
-[2025-02-05 16:27:41:1435][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
- HHH000412: Hibernate ORM core version 6.6.4.Final 
-[2025-02-05 16:27:41:1452][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
- HHH000026: Second-level cache disabled 
-[2025-02-05 16:27:42:1568][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
- No LoadTimeWeaver setup: ignoring JPA class transformer 
-[2025-02-05 16:27:42:1580][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Starting... 
-[2025-02-05 16:27:42:1629][main] [32m INFO[0;39m [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
- HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@23ee70a7 
-[2025-02-05 16:27:42:1629][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
- HikariPool-1 - Start completed. 
-[2025-02-05 16:27:42:1655][main] [32m INFO[0;39m [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
- HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 11.6.2
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown 
-[2025-02-05 16:27:42:2010][main] [32m INFO[0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-[2025-02-05 16:27:42:2341][main] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
- Initialized JPA EntityManagerFactory for persistence unit 'default' 
-[2025-02-05 16:27:43:2672][main] [32m INFO[0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
- Global AuthenticationManager configured with UserDetailsService bean with name authService 
-[2025-02-05 16:27:43:3198][main] [32m INFO[0;39m [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
- bound to 0.0.0.0:7777 
-[2025-02-05 16:27:43:3425][s3mock-akka.actor.default-dispatcher-2] [32m INFO[0;39m [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
- PUT bucket my-bucket 
-[2025-02-05 16:27:44:3716][main] [32m INFO[0;39m [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
- Exposing 1 endpoint beneath base path '/actuator' 
-[2025-02-05 16:27:44:3778][main] [33m WARN[0;39m [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
- You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
-[2025-02-05 16:27:44:4122][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
- Starting ProtocolHandler ["http-nio-9000"] 
-[2025-02-05 16:27:44:4125][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
- Tomcat started on port 9000 (http) with context path '/' 
-[2025-02-05 16:27:45:4633][RMI TCP Connection(1)-127.0.0.1] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
- Initializing Spring DispatcherServlet 'dispatcherServlet' 
-[2025-02-05 16:27:45:4633][RMI TCP Connection(1)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
- Initializing Servlet 'dispatcherServlet' 
-[2025-02-05 16:27:45:4634][RMI TCP Connection(1)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
- Completed initialization in 1 ms 
-[2025-02-05 16:27:57:17418][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
- Stopping redis server... 
-[2025-02-05 16:27:57:17420][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
- Commencing graceful shutdown. Waiting for active requests to complete 
-[2025-02-05 16:27:57:17421][tomcat-shutdown] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
- Graceful shutdown complete 
-[2025-02-05 16:27:57:17468][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
- Redis exited 
-[2025-02-05 16:27:57:17551][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
- Closing JPA EntityManagerFactory for persistence unit 'default' 
-[2025-02-05 16:27:57:17553][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown initiated... 
-[2025-02-05 16:27:57:17556][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
- HikariPool-1 - Shutdown completed. 
-[2025-02-05 16:29:13:319][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
- HV000001: Hibernate Validator 8.0.2.Final 
-[2025-02-05 16:29:14:796][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-02-05 16:29:14:797][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-[2025-02-05 16:29:14:865][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces. 
-[2025-02-05 16:29:14:871][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
- Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-02-05 16:29:14:872][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-[2025-02-05 16:29:14:880][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.comment.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-02-05 16:29:14:880][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-02-05 16:29:14:880][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-02-05 16:29:14:880][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+[2025-02-11 13:01:21:933][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
  Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces. 
-[2025-02-05 16:29:14:1198][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+[2025-02-11 13:01:21:1271][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
  HHH000204: Processing PersistenceUnitInfo [name: default] 
-[2025-02-05 16:29:14:1223][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+[2025-02-11 13:01:21:1298][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
  HHH000412: Hibernate ORM core version 6.6.4.Final 
-[2025-02-05 16:29:14:1239][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+[2025-02-11 13:01:21:1313][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
  HHH000026: Second-level cache disabled 
-[2025-02-05 16:29:15:1338][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+[2025-02-11 13:01:22:1428][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
  No LoadTimeWeaver setup: ignoring JPA class transformer 
-[2025-02-05 16:29:15:1352][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+[2025-02-11 13:01:22:1442][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
  HikariPool-1 - Starting... 
-[2025-02-05 16:29:15:1411][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
- HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@576a8b00 
-[2025-02-05 16:29:15:1412][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+[2025-02-11 13:01:22:1503][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6a30f6b1 
+[2025-02-11 13:01:22:1504][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
  HikariPool-1 - Start completed. 
-[2025-02-05 16:29:15:1439][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+[2025-02-11 13:01:22:1532][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
  HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
@@ -134,77 +39,65 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown 
-[2025-02-05 16:29:15:1775][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+[2025-02-11 13:01:22:1899][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-[2025-02-05 16:29:15:1874][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+[2025-02-11 13:01:22:1924][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
  Initialized JPA EntityManagerFactory for persistence unit 'default' 
-[2025-02-05 16:29:16:2557][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+[2025-02-11 13:01:23:2754][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
  bound to 0.0.0.0:7777 
-[2025-02-05 16:29:16:2958][s3mock-akka.actor.default-dispatcher-4]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+[2025-02-11 13:01:23:3195][s3mock-akka.actor.default-dispatcher-2]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
  PUT bucket my-bucket 
-[2025-02-05 16:29:16:3114][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+[2025-02-11 13:01:23:3347][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
  Global AuthenticationManager configured with UserDetailsService bean with name authService 
-[2025-02-05 16:29:16:3316][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+[2025-02-11 13:01:24:3560][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
  Exposing 1 endpoint beneath base path '/actuator' 
-[2025-02-05 16:29:17:3406][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+[2025-02-11 13:01:24:3629][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
  You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
-[2025-02-05 16:29:17:4316][RedisInstanceCleaner]  INFO [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
- Stopping redis server... 
-[2025-02-05 16:29:18:4396][RedisInstanceCleaner]  INFO [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
- Redis exited 
-[2025-02-05 16:29:18:4440][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+[2025-02-11 13:01:24:4356][Test worker]  WARN [36mo.m.j.m.s.ErrorPacket[0;39m [32mwarn[0;39m 
+ Error: 1452-23000: Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:01:24:4357][Test worker]  WARN [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ SQL Error: 1452, SQLState: 23000 
+[2025-02-11 13:01:24:4357][Test worker] ERROR [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ (conn=244) Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:01:25:4554][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
  Closing JPA EntityManagerFactory for persistence unit 'default' 
-[2025-02-05 16:29:18:4441][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+[2025-02-11 13:01:25:4555][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
  HikariPool-1 - Shutdown initiated... 
-[2025-02-05 16:29:18:4444][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+[2025-02-11 13:01:25:4558][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
  HikariPool-1 - Shutdown completed. 
-[2025-02-05 16:29:29:193][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+[2025-02-11 13:04:39:278][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
  HV000001: Hibernate Validator 8.0.2.Final 
-[2025-02-05 16:29:30:615][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+[2025-02-11 13:04:40:768][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
  Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-02-05 16:29:30:616][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+[2025-02-11 13:04:40:769][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
  Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
-[2025-02-05 16:29:30:676][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces. 
-[2025-02-05 16:29:30:680][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+[2025-02-11 13:04:40:837][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:04:40:843][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
  Multiple Spring Data modules found, entering strict repository configuration mode 
-[2025-02-05 16:29:30:680][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+[2025-02-11 13:04:40:844][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
  Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
-[2025-02-05 16:29:30:686][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.comment.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-02-05 16:29:30:686][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+[2025-02-11 13:04:40:852][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-02-05 16:29:30:686][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+[2025-02-11 13:04:40:852][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
-[2025-02-05 16:29:30:687][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
- Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
-[2025-02-05 16:29:30:1016][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
- Tomcat initialized with port 9000 (http) 
-[2025-02-05 16:29:30:1020][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
- Initializing ProtocolHandler ["http-nio-9000"] 
-[2025-02-05 16:29:30:1021][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
- Starting service [Tomcat] 
-[2025-02-05 16:29:30:1021][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
- Starting Servlet engine: [Apache Tomcat/10.1.34] 
-[2025-02-05 16:29:30:1042][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
- Initializing Spring embedded WebApplicationContext 
-[2025-02-05 16:29:30:1042][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
- Root WebApplicationContext: initialization completed in 820 ms 
-[2025-02-05 16:29:30:1186][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+[2025-02-11 13:04:40:852][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:04:40:1169][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
  HHH000204: Processing PersistenceUnitInfo [name: default] 
-[2025-02-05 16:29:30:1202][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+[2025-02-11 13:04:40:1191][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
  HHH000412: Hibernate ORM core version 6.6.4.Final 
-[2025-02-05 16:29:30:1213][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+[2025-02-11 13:04:40:1205][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
  HHH000026: Second-level cache disabled 
-[2025-02-05 16:29:31:1308][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+[2025-02-11 13:04:40:1305][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
  No LoadTimeWeaver setup: ignoring JPA class transformer 
-[2025-02-05 16:29:31:1318][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+[2025-02-11 13:04:40:1317][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
  HikariPool-1 - Starting... 
-[2025-02-05 16:29:31:1358][main] [32m INFO[0;39m [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
- HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@2569afda 
-[2025-02-05 16:29:31:1358][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+[2025-02-11 13:04:40:1373][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@24888d8b 
+[2025-02-11 13:04:40:1375][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
  HikariPool-1 - Start completed. 
-[2025-02-05 16:29:31:1384][main] [32m INFO[0;39m [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+[2025-02-11 13:04:40:1401][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
  HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
@@ -213,41 +106,839 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown 
-[2025-02-05 16:29:31:1713][main] [32m INFO[0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+[2025-02-11 13:04:41:1746][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
  HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
-[2025-02-05 16:29:31:1739][main] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+[2025-02-11 13:04:41:1772][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
  Initialized JPA EntityManagerFactory for persistence unit 'default' 
-[2025-02-05 16:29:31:2045][main] [32m INFO[0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
- Global AuthenticationManager configured with UserDetailsService bean with name authService 
-[2025-02-05 16:29:32:2538][main] [32m INFO[0;39m [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+[2025-02-11 13:04:41:2507][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
  bound to 0.0.0.0:7777 
-[2025-02-05 16:29:32:2745][s3mock-akka.actor.default-dispatcher-4] [32m INFO[0;39m [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+[2025-02-11 13:04:42:2895][s3mock-akka.actor.default-dispatcher-3]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
  PUT bucket my-bucket 
-[2025-02-05 16:29:32:3041][main] [32m INFO[0;39m [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+[2025-02-11 13:04:42:3026][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:04:42:3220][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
  Exposing 1 endpoint beneath base path '/actuator' 
-[2025-02-05 16:29:32:3111][main] [33m WARN[0;39m [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+[2025-02-11 13:04:42:3279][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
  You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
-[2025-02-05 16:29:33:3453][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
- Starting ProtocolHandler ["http-nio-9000"] 
-[2025-02-05 16:29:33:3456][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
- Tomcat started on port 9000 (http) with context path '/' 
-[2025-02-05 16:29:33:4044][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
- Initializing Spring DispatcherServlet 'dispatcherServlet' 
-[2025-02-05 16:29:33:4044][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
- Initializing Servlet 'dispatcherServlet' 
-[2025-02-05 16:29:33:4045][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
- Completed initialization in 1 ms 
-[2025-02-05 16:30:36:67203][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
- Stopping redis server... 
-[2025-02-05 16:30:36:67206][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
- Commencing graceful shutdown. Waiting for active requests to complete 
-[2025-02-05 16:30:36:67209][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
- Redis exited 
-[2025-02-05 16:30:36:67210][tomcat-shutdown] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
- Graceful shutdown complete 
-[2025-02-05 16:30:37:67341][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+[2025-02-11 13:04:43:3926][Test worker]  WARN [36mo.m.j.m.s.ErrorPacket[0;39m [32mwarn[0;39m 
+ Error: 1452-23000: Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:04:43:3928][Test worker]  WARN [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ SQL Error: 1452, SQLState: 23000 
+[2025-02-11 13:04:43:3928][Test worker] ERROR [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ (conn=254) Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:04:43:4086][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
  Closing JPA EntityManagerFactory for persistence unit 'default' 
-[2025-02-05 16:30:37:67343][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+[2025-02-11 13:04:43:4087][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
  HikariPool-1 - Shutdown initiated... 
-[2025-02-05 16:30:37:67346][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+[2025-02-11 13:04:43:4089][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:05:06:252][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:05:07:739][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:05:07:740][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:05:07:806][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:05:07:812][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:05:07:812][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:05:07:821][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:05:07:821][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:05:07:821][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:05:07:1168][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:05:07:1193][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:05:07:1205][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:05:07:1301][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:05:07:1312][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:05:07:1375][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@24888d8b 
+[2025-02-11 13:05:07:1375][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:05:07:1402][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:05:08:1741][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:05:08:1770][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:05:08:2506][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:05:09:2900][s3mock-akka.actor.default-dispatcher-4]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:05:09:3039][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:05:09:3237][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:05:09:3304][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:05:10:4129][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:05:10:4130][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:05:10:4132][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:06:22:281][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:06:22:841][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:06:22:842][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:06:23:909][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:06:23:915][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:06:23:916][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:06:23:924][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:06:23:925][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:06:23:925][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:06:23:1243][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:06:23:1265][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:06:23:1278][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:06:23:1373][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:06:23:1385][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:06:23:1446][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@eaa07bb 
+[2025-02-11 13:06:23:1446][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:06:23:1473][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:06:23:1815][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:06:23:1840][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:06:24:2583][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:06:25:2975][s3mock-akka.actor.default-dispatcher-2]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:06:25:3110][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:06:25:3325][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:06:25:3403][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:06:26:4094][Test worker]  WARN [36mo.m.j.m.s.ErrorPacket[0;39m [32mwarn[0;39m 
+ Error: 1452-23000: Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:06:26:4095][Test worker]  WARN [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ SQL Error: 1452, SQLState: 23000 
+[2025-02-11 13:06:26:4095][Test worker] ERROR [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ (conn=274) Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:06:26:4264][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:06:26:4265][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:06:26:4267][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:07:16:283][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:07:17:820][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:07:17:821][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:07:17:889][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:07:17:895][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:07:17:896][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:07:17:905][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:07:17:905][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:07:17:905][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:07:17:1274][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:07:17:1302][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:07:17:1318][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:07:17:1429][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:07:17:1444][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:07:17:1521][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@7c1c0892 
+[2025-02-11 13:07:17:1521][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:07:17:1552][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:07:18:1925][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:07:18:1954][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:07:19:2817][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:07:19:3276][s3mock-akka.actor.default-dispatcher-5]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:07:19:3438][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:07:20:3680][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:07:20:3757][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:07:20:4489][Test worker]  WARN [36mo.m.j.m.s.ErrorPacket[0;39m [32mwarn[0;39m 
+ Error: 1452-23000: Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:07:20:4490][Test worker]  WARN [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ SQL Error: 1452, SQLState: 23000 
+[2025-02-11 13:07:20:4490][Test worker] ERROR [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ (conn=284) Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:07:21:4656][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:07:21:4658][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:07:21:4660][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:07:34:283][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:07:35:901][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:07:35:902][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:07:35:979][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 72 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:07:35:985][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:07:35:985][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:07:35:994][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:07:35:994][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:07:35:994][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:07:35:1353][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:07:35:1376][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:07:35:1388][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:07:35:1481][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:07:35:1492][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:07:35:1560][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@72b6fa98 
+[2025-02-11 13:07:35:1560][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:07:35:1583][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:07:36:1911][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:07:36:1936][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:07:37:2691][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:07:37:3126][s3mock-akka.actor.default-dispatcher-6]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:07:37:3277][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:07:37:3493][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:07:37:3567][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:07:38:4403][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:07:38:4404][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:07:38:4406][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:08:16:270][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:08:16:752][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:08:16:752][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:08:16:820][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:08:16:826][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:08:16:826][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:08:16:834][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:08:16:835][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:08:16:835][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:08:17:1149][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:08:17:1171][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:08:17:1183][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:08:17:1283][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:08:17:1296][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:08:17:1351][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@52b32622 
+[2025-02-11 13:08:17:1351][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:08:17:1377][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:08:17:1702][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:08:17:1726][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:08:18:2442][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:08:18:2840][s3mock-akka.actor.default-dispatcher-2]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:08:18:2979][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:08:19:3181][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:08:19:3241][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:08:19:3916][Test worker]  WARN [36mo.m.j.m.s.ErrorPacket[0;39m [32mwarn[0;39m 
+ Error: 1452-23000: Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:08:19:3917][Test worker]  WARN [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ SQL Error: 1452, SQLState: 23000 
+[2025-02-11 13:08:19:3917][Test worker] ERROR [36mo.h.e.j.s.SqlExceptionHelper[0;39m [32mlogExceptions[0;39m 
+ (conn=305) Cannot add or update a child row: a foreign key constraint fails (`kotlinstudy`.`comment_closure`, CONSTRAINT `FKfcjvp9lsc0a6ocp78lp2f0vgb` FOREIGN KEY (`id_ancestor`) REFERENCES `Comment` (`id`)) 
+[2025-02-11 13:08:19:4067][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:08:19:4068][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:08:19:4069][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:09:33:257][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:09:33:727][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:09:33:728][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:09:33:791][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:09:33:798][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:09:33:798][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:09:33:807][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:09:33:807][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:09:33:807][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:09:34:1121][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:09:34:1145][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:09:34:1158][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:09:34:1253][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:09:34:1263][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:09:34:1325][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@48928b57 
+[2025-02-11 13:09:34:1325][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:09:34:1351][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:09:34:1687][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:09:34:1712][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:09:35:2467][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:09:35:2866][s3mock-akka.actor.default-dispatcher-3]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:09:36:2999][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:09:36:3195][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:09:36:3284][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:09:37:4090][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:09:37:4091][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:09:37:4093][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:16:43:200][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:16:43:702][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:16:43:703][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:16:43:767][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:16:43:773][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:16:43:773][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:16:43:780][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:16:43:780][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:16:43:780][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:16:43:1133][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2025-02-11 13:16:43:1138][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2025-02-11 13:16:43:1138][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2025-02-11 13:16:43:1138][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2025-02-11 13:16:43:1159][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2025-02-11 13:16:43:1159][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 926 ms 
+[2025-02-11 13:16:44:1305][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:16:44:1325][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:16:44:1337][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:16:44:1451][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:16:44:1462][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:16:44:1503][main] [32m INFO[0;39m [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@1dbf727a 
+[2025-02-11 13:16:44:1504][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:16:44:1528][main] [32m INFO[0;39m [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:16:44:1851][main] [32m INFO[0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:16:45:2393][main] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:16:45:2696][main] [32m INFO[0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:16:46:3243][main] [32m INFO[0;39m [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:16:46:3870][s3mock-akka.actor.default-dispatcher-2] [32m INFO[0;39m [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:16:46:4147][main] [32m INFO[0;39m [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:16:47:4207][main] [33m WARN[0;39m [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:16:47:4521][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2025-02-11 13:16:47:4524][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2025-02-11 13:16:47:5118][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2025-02-11 13:16:47:5118][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2025-02-11 13:16:47:5119][RMI TCP Connection(3)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 1 ms 
+[2025-02-11 13:16:51:9051][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Stopping redis server... 
+[2025-02-11 13:16:51:9053][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2025-02-11 13:16:51:9054][tomcat-shutdown] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2025-02-11 13:16:51:9095][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Redis exited 
+[2025-02-11 13:16:52:9183][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:16:52:9185][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:16:52:9188][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:17:14:275][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:17:14:806][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:17:14:807][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:17:15:876][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:17:15:882][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:17:15:883][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:17:15:891][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:17:15:892][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:17:15:892][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:17:15:1244][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:17:15:1266][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:17:15:1279][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:17:15:1378][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:17:15:1391][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:17:15:1462][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@7a7bd9a8 
+[2025-02-11 13:17:15:1463][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:17:15:1488][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:17:16:1827][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:17:16:1854][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:17:16:2606][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:17:17:3040][s3mock-akka.actor.default-dispatcher-3]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:17:17:3201][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:17:17:3421][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:17:17:3493][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:17:18:4334][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:17:18:4335][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:17:18:4337][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:20:06:178][background-preinit] [32m INFO[0;39m [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:20:06:615][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:20:06:615][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:20:06:674][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:20:06:678][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:20:06:678][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:20:06:684][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:20:06:685][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:20:06:685][main] [32m INFO[0;39m [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:20:06:1003][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32minitialize[0;39m 
+ Tomcat initialized with port 9000 (http) 
+[2025-02-11 13:20:06:1007][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Initializing ProtocolHandler ["http-nio-9000"] 
+[2025-02-11 13:20:06:1008][main] [32m INFO[0;39m [36mo.a.c.c.StandardService[0;39m [32mlog[0;39m 
+ Starting service [Tomcat] 
+[2025-02-11 13:20:06:1008][main] [32m INFO[0;39m [36mo.a.c.c.StandardEngine[0;39m [32mlog[0;39m 
+ Starting Servlet engine: [Apache Tomcat/10.1.34] 
+[2025-02-11 13:20:06:1029][main] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring embedded WebApplicationContext 
+[2025-02-11 13:20:06:1029][main] [32m INFO[0;39m [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m [32mprepareWebApplicationContext[0;39m 
+ Root WebApplicationContext: initialization completed in 819 ms 
+[2025-02-11 13:20:07:1199][main] [32m INFO[0;39m [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:20:07:1216][main] [32m INFO[0;39m [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:20:07:1228][main] [32m INFO[0;39m [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:20:07:1329][main] [32m INFO[0;39m [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:20:07:1339][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:20:07:1372][main] [32m INFO[0;39m [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@1d686622 
+[2025-02-11 13:20:07:1373][main] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:20:07:1397][main] [32m INFO[0;39m [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:20:07:1715][main] [32m INFO[0;39m [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:20:07:1739][main] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:20:07:2010][main] [32m INFO[0;39m [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:20:08:2503][main] [32m INFO[0;39m [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:20:08:2898][s3mock-akka.actor.default-dispatcher-4] [32m INFO[0;39m [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:20:09:3187][main] [32m INFO[0;39m [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:20:09:3247][main] [33m WARN[0;39m [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:20:09:3574][main] [32m INFO[0;39m [36mo.a.c.h.Http11NioProtocol[0;39m [32mlog[0;39m 
+ Starting ProtocolHandler ["http-nio-9000"] 
+[2025-02-11 13:20:09:3578][main] [32m INFO[0;39m [36mo.s.b.w.e.t.TomcatWebServer[0;39m [32mstart[0;39m 
+ Tomcat started on port 9000 (http) with context path '/' 
+[2025-02-11 13:20:09:4007][RMI TCP Connection(4)-127.0.0.1] [32m INFO[0;39m [36mo.a.c.c.C.[.[.[/][0;39m [32mlog[0;39m 
+ Initializing Spring DispatcherServlet 'dispatcherServlet' 
+[2025-02-11 13:20:09:4007][RMI TCP Connection(4)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Initializing Servlet 'dispatcherServlet' 
+[2025-02-11 13:20:09:4008][RMI TCP Connection(4)-127.0.0.1] [32m INFO[0;39m [36mo.s.w.s.DispatcherServlet[0;39m [32minitServletBean[0;39m 
+ Completed initialization in 1 ms 
+[2025-02-11 13:20:13:8047][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Stopping redis server... 
+[2025-02-11 13:20:13:8048][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mshutDownGracefully[0;39m 
+ Commencing graceful shutdown. Waiting for active requests to complete 
+[2025-02-11 13:20:13:8050][tomcat-shutdown] [32m INFO[0;39m [36mo.s.b.w.e.t.GracefulShutdown[0;39m [32mdoShutdown[0;39m 
+ Graceful shutdown complete 
+[2025-02-11 13:20:14:8129][RedisInstanceCleaner] [32m INFO[0;39m [36mr.e.AbstractRedisInstance[0;39m [32mstop[0;39m 
+ Redis exited 
+[2025-02-11 13:20:14:8184][SpringApplicationShutdownHook] [32m INFO[0;39m [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:20:14:8185][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:20:14:8188][SpringApplicationShutdownHook] [32m INFO[0;39m [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:20:46:271][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:20:47:734][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:20:47:735][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:20:47:804][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:20:47:810][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:20:47:811][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:20:47:819][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:20:47:820][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:20:47:820][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:20:47:1147][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:20:47:1171][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:20:47:1186][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:20:47:1285][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:20:47:1301][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:20:47:1360][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@7fb1820d 
+[2025-02-11 13:20:47:1361][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:20:47:1388][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:20:48:1731][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:20:48:1757][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:20:48:2490][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:20:49:2897][s3mock-akka.actor.default-dispatcher-4]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:20:49:3037][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:20:49:3257][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:20:49:3343][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:20:50:4163][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:20:50:4164][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:20:50:4166][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:33:31:299][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:33:32:881][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:33:32:882][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:33:32:956][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 67 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:33:32:963][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:33:32:964][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:33:32:972][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:33:32:972][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:33:32:972][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:33:32:1348][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:33:32:1383][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:33:32:1396][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:33:32:1503][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:33:33:1517][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:33:33:1580][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@2f69d246 
+[2025-02-11 13:33:33:1581][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:33:33:1607][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:33:33:1971][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:33:33:1998][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:33:34:2817][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:33:34:3294][s3mock-akka.actor.default-dispatcher-3]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:33:34:3443][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:33:35:3657][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:33:35:3719][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:33:36:4561][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:33:36:4563][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:33:36:4564][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown completed. 
+[2025-02-11 13:36:13:283][background-preinit]  INFO [36mo.h.v.i.u.Version[0;39m [32m<clinit>[0;39m 
+ HV000001: Hibernate Validator 8.0.2.Final 
+[2025-02-11 13:36:14:951][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:36:14:952][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+[2025-02-11 13:36:14:1033][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces. 
+[2025-02-11 13:36:14:1040][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mmultipleStoresDetected[0;39m 
+ Multiple Spring Data modules found, entering strict repository configuration mode 
+[2025-02-11 13:36:14:1041][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+[2025-02-11 13:36:14:1050][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.member.MemberRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:36:14:1051][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationExtensionSupport[0;39m [32misStrictRepositoryCandidate[0;39m 
+ Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.kotlinstudy.domain.post.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository 
+[2025-02-11 13:36:14:1051][Test worker]  INFO [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m [32mregisterRepositoriesIn[0;39m 
+ Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces. 
+[2025-02-11 13:36:14:1449][Test worker]  INFO [36mo.h.j.i.u.LogHelper[0;39m [32mlogPersistenceUnitInformation[0;39m 
+ HHH000204: Processing PersistenceUnitInfo [name: default] 
+[2025-02-11 13:36:14:1474][Test worker]  INFO [36mo.h.Version[0;39m [32mlogVersion[0;39m 
+ HHH000412: Hibernate ORM core version 6.6.4.Final 
+[2025-02-11 13:36:14:1489][Test worker]  INFO [36mo.h.c.i.RegionFactoryInitiator[0;39m [32minitiateService[0;39m 
+ HHH000026: Second-level cache disabled 
+[2025-02-11 13:36:15:1588][Test worker]  INFO [36mo.s.o.j.p.SpringPersistenceUnitInfo[0;39m [32maddTransformer[0;39m 
+ No LoadTimeWeaver setup: ignoring JPA class transformer 
+[2025-02-11 13:36:15:1604][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Starting... 
+[2025-02-11 13:36:15:1669][Test worker]  INFO [36mc.z.h.p.HikariPool[0;39m [32mcheckFailFast[0;39m 
+ HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@29088be1 
+[2025-02-11 13:36:15:1670][Test worker]  INFO [36mc.z.h.HikariDataSource[0;39m [32mgetConnection[0;39m 
+ HikariPool-1 - Start completed. 
+[2025-02-11 13:36:15:1694][Test worker]  INFO [36mo.h.o.c.pooling[0;39m [32minitiateService[0;39m 
+ HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.6.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+[2025-02-11 13:36:15:2033][Test worker]  INFO [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m [32minitiateService[0;39m 
+ HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+[2025-02-11 13:36:15:2058][Test worker]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mbuildNativeEntityManagerFactory[0;39m 
+ Initialized JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:36:16:2866][Test worker]  INFO [36mi.f.s.S3Mock[0;39m [32mstart[0;39m 
+ bound to 0.0.0.0:7777 
+[2025-02-11 13:36:16:3311][s3mock-akka.actor.default-dispatcher-3]  INFO [36mi.f.s.r.CreateBucket[0;39m [32m$anonfun$route$3[0;39m 
+ PUT bucket my-bucket 
+[2025-02-11 13:36:16:3454][Test worker]  INFO [36mo.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m [32mconfigure[0;39m 
+ Global AuthenticationManager configured with UserDetailsService bean with name authService 
+[2025-02-11 13:36:17:3666][Test worker]  INFO [36mo.s.b.a.e.w.EndpointLinksResolver[0;39m [32m<init>[0;39m 
+ Exposing 1 endpoint beneath base path '/actuator' 
+[2025-02-11 13:36:17:3742][Test worker]  WARN [36mo.s.s.c.a.w.b.WebSecurity[0;39m [32mperformBuild[0;39m 
+ You are asking Spring Security to ignore Deferred [Mvc [pattern='/**'], Ant [pattern='/**']]. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead. 
+[2025-02-11 13:36:18:4587][SpringApplicationShutdownHook]  INFO [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m [32mdestroy[0;39m 
+ Closing JPA EntityManagerFactory for persistence unit 'default' 
+[2025-02-11 13:36:18:4588][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
+ HikariPool-1 - Shutdown initiated... 
+[2025-02-11 13:36:18:4590][SpringApplicationShutdownHook]  INFO [36mc.z.h.HikariDataSource[0;39m [32mclose[0;39m 
  HikariPool-1 - Shutdown completed. 

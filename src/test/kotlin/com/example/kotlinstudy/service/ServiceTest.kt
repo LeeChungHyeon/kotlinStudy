@@ -48,7 +48,6 @@ class ServiceTest {
 
     //given
     val dto = CommentSaveReq(
-      id = 0,
       memberId = 1,
       content = "test content",
       postId = 1,
@@ -57,7 +56,6 @@ class ServiceTest {
 
     val post = Optional.ofNullable(
       Post(
-        id = 1,
         title = "title",
         content = "content",
         member = Member.createFakeMember(2),

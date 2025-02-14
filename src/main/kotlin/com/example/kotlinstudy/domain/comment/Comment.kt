@@ -10,15 +10,17 @@ import java.time.LocalDateTime
 @Entity
 @Table(name = "Comment")
 class Comment(
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long,
     content: String,
     post: Post,
     member: Member,
     createAt: LocalDateTime = LocalDateTime.now(),
     updateAt: LocalDateTime = LocalDateTime.now()
 ) {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: Long = 0
+        protected set
 
     @Column(name = "content", nullable = false, length = 1000)
     var content: String = content

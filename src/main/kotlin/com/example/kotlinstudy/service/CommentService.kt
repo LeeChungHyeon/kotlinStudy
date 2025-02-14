@@ -30,4 +30,9 @@ class CommentService(
 
     }
 
+    @Transactional(readOnly = true)
+    fun findCommentByAncestorComment(idAncestor: Long): List<CommentRes> {
+        return commentRepository.findCommentByAncestorComment(idAncestor).map { it.toDto() }
+    }
+
 }
